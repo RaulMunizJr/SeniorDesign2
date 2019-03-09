@@ -3,23 +3,23 @@
 --------------------------------------------
 ##HomePage (Manufacturing Process, Increase Productivity)
 -SignUp Process:
-**Single User (MANAGER)
-**Name, Email, Password
-*Link to Dashboard
+**Single User (MANAGER)**
+**Name, Email, Password**
+*Link to Dashboard*
 -----------------------------------------------
 - [ ]
 --------------------------------------------
 ##Dashboard:
 -User Info
-**Tiers on the side
-*Data displayed on the right of dashboard
+**Tiers on the side**
+*Data displayed on the right of dashboard*
 -----------------------------------------------
 - [ ]
 --------------------------------------------
 ##CompanyData
 -Import Company Data/Info
-**Dr. E Martinez (Reference)
-*User interface
+**Dr. E Martinez (Reference)**
+*User interface*
 -----------------------------------------------
 
 
