@@ -1,7 +1,7 @@
-#To Do List
+# To Do List
 - [ ]
 --------------------------------------------
-##HomePage (Manufacturing Process, Increase Productivity)
+## HomePage (Manufacturing Process, Increase Productivity)
 -SignUp Process:
 **Single User (MANAGER)**
 **Name, Email, Password**
@@ -9,14 +9,14 @@
 -----------------------------------------------
 - [ ]
 --------------------------------------------
-##Dashboard:
+## Dashboard:
 -User Info
 **Tiers on the side**
 *Data displayed on the right of dashboard*
 -----------------------------------------------
 - [ ]
 --------------------------------------------
-##CompanyData
+## CompanyData
 -Import Company Data/Info
 **Dr. E Martinez (Reference)**
 *User interface*
