@@ -5,21 +5,21 @@
 -SignUp Process:
 **Single User (MANAGER)
 **Name, Email, Password
-Link to Dashboard
+*Link to Dashboard
 -----------------------------------------------
 - [ ]
 --------------------------------------------
 ##Dashboard:
 -User Info
 **Tiers on the side
-Data displayed on the right of dashboard
+*Data displayed on the right of dashboard
 -----------------------------------------------
 - [ ]
 --------------------------------------------
 ##CompanyData
 -Import Company Data/Info
 **Dr. E Martinez (Reference)
-User interface
+*User interface
 -----------------------------------------------
 
 
