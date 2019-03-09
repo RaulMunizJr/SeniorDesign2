@@ -1,7 +1,7 @@
 # To Do List
 - [ ]
 --------------------------------------------
-## HomePage (Manufacturing Process, Increase Productivity)
+## HomePage (Manufacturing Process, Increase Productivity):
 -SignUp Process:
 **Single User (MANAGER)**
 **Name, Email, Password**
