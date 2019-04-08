@@ -4706,3 +4706,125 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 94ms (Views: 87.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-04-07 20:39:05 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_erb__1672163278771471431_70185286101980 at /Users/RaulMuniz/Desktop/LeanMan/app/views/devise/registrations/new.html.erb:25)
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 70ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-04-07 20:39:24 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8mfma3OvoZECHcHwBozVqdG9nF3QEAuE06Nm8LUar3IpGv889gDj0AO5Jb4flQU7YM5g2+QmKR20/Z+acRiYgw==", "user"=>{"email"=>"raul@123.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raul@123.com"], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "raul@123.com"], ["encrypted_password", "$2a$11$UUasHK2apcqz3vHFaiemvOMLq/Ro55frr9wCsygd5Cu67KUAiLrtW"], ["created_at", "2019-04-08 01:39:24.753347"], ["updated_at", "2019-04-08 01:39:24.753347"]]
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 194ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-07 20:39:24 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:45
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2019-04-07 20:39:28 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-07 20:40:44 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:45
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-04-07 20:40:53 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KWXUxof11npeWn3f4hEI3oYXk2enB7kmPAgjayvlBnUDC+u3ksqPE5XeDQ34HMY3EJBmMkZx1fi4HjAa44Kr/Q=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-07 20:40:53 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-04-07 20:40:56 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-04-07 20:41:03 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EpR6BxCpqXbmarGR03zEBC6wpIwL2QvRHnFAi7aOQ1xKeKgEvtkjwEJdSUgTx0+6rV1RihgaF2F78kTWp5QSFQ==", "user"=>{"email"=>"raul@123.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "raul@123.com"], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 178ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-07 20:41:03 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:45
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-04-07 20:41:09 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1vOmRyObyBaclUOTLAbCw8DWEYoS0DkLOYOx0oHequPR8m4OrCxDfBL0dWhuwkoKmgTKMzKohwWfJ90NMVfMow=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/RaulMuniz/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-07 20:41:09 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
