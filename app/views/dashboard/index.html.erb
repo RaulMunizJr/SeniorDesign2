@@ -42,9 +42,9 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="/nothing">
           <i class="fas fa-calendar-alt"></i>
-          <span>Welcome</span></a>
+          <span>Clear</span></a>
       </li>
 
       <!-- Divider -->
@@ -57,13 +57,13 @@
 
       <!-- First couple of buttons to acces Tools / Tier 1 -->
       <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="/tool1">
           <i class="fas fa-columns"></i>
           <span>Tool 1</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="/tool2">
           <i class="fas fa-bezier-curve"></i>
           <span>Tool 2</span></a>
       </li>
@@ -280,9 +280,21 @@
         </nav>
         <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
+        <!--------------------------------- Partials -------------------------------------------->
         <div class="container-fluid">
-          <%= render "load1" %>
+          <%=
+
+          case session[:load_part].to_i
+
+            when 1
+              render 'load1'
+            when 2
+              render 'load2'
+            else
+              render 'nothing'
+            end             
+          %>
+          <!----------------------------------------------------------------------------------------------->
         </div>
         <!-- /.container-fluid -->
 
@@ -330,12 +342,12 @@
   <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/chart.js/Chart.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/js/demo/chart-area-demo.js"></script>
-  <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/js/demo/chart-pie-demo.js"></script>
+ 
 
 </body>
+
+
 
 </html>

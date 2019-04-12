@@ -8316,3 +8316,1728 @@ Processing by DashboardController#index as HTML
 Completed 200 OK in 411ms (Views: 400.4ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-04-11 18:25:45 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 595ms (Views: 577.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-04-11 18:25:49 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_erb__2305964375778635154_70190882668780 at /Users/RaulMuniz/Desktop/LeanMan/app/views/devise/registrations/new.html.erb:25)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (56.5ms)
+Completed 200 OK in 123ms (Views: 105.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-04-11 18:25:57 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ud8Ga53JnJ8CP/Igkh9PavzKIOBmvXvP5CSW6d3WW1YnNyUQ0qniE9ZP7bGgC3IdXQzgerjcRkRveGGXMQdpVA==", "user"=>{"email"=>"raul@123.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raul@123.com"], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_erb__2305964375778635154_70190865672880 at /Users/RaulMuniz/Desktop/LeanMan/app/views/devise/registrations/new.html.erb:25)
+  Rendered devise/shared/_error_messages.html.erb (1.6ms)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 288ms (Views: 80.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-04-11 18:26:00 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 81ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-04-11 18:26:08 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wnJ0xkhJnr2lcgDqa2a21ukEt4kV88c5O1CErOYViyJs9FPcWRtU39s2lRmW+TzI2xHiafM1I0oZg7td1MWDFA==", "user"=>{"email"=>"raul@123.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "raul@123.com"], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 183ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-11 18:26:08 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:26:08 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 60ms (Views: 54.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:34:54 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 47ms (Views: 43.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:35:02 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-04-11 18:35:12 -0500
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-04-11 18:35:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:35:19 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:35:31 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:36:00 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 46ms (Views: 41.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:49:27 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 59ms (Views: 55.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:49:30 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 45ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2019-04-11 18:49:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rails/info/routes?path=changer" for 127.0.0.1 at 2019-04-11 18:49:37 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"changer"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/__web_console/repl_sessions/1b4b77a3a90707ecf921dd8a34236804" for 127.0.0.1 at 2019-04-11 18:50:27 -0500
+Started PUT "/__web_console/repl_sessions/1b4b77a3a90707ecf921dd8a34236804" for 127.0.0.1 at 2019-04-11 18:50:29 -0500
+Started GET "/" for 127.0.0.1 at 2019-04-11 18:50:51 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 14ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:50:51 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:50:58 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:51:10 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 51ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:53:41 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 18:53:44 -0500
+  
+AbstractController::ActionNotFound (The action 'changer' could not be found for DashboardController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 18:54:17 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (0 for 1)):
+  
+app/controllers/dashboard_controller.rb:5:in `changer'
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 18:54:32 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `x' for #<DashboardController:0x007fad2a3a2b20>):
+  
+app/controllers/dashboard_controller.rb:6:in `changer'
+Started PUT "/__web_console/repl_sessions/47e286c29c4bd35808ab8a90ec0e2ef5" for 127.0.0.1 at 2019-04-11 18:54:52 -0500
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 18:55:04 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `x' for #<DashboardController:0x007fad2d4ccd90>):
+  
+app/controllers/dashboard_controller.rb:6:in `changer'
+Started PUT "/__web_console/repl_sessions/6709677630dda0afe5d92795bbc56637" for 127.0.0.1 at 2019-04-11 18:55:13 -0500
+Started PUT "/__web_console/repl_sessions/6709677630dda0afe5d92795bbc56637" for 127.0.0.1 at 2019-04-11 18:55:13 -0500
+Started PUT "/__web_console/repl_sessions/6709677630dda0afe5d92795bbc56637" for 127.0.0.1 at 2019-04-11 18:55:25 -0500
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 18:55:33 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:55:33 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 75ms (Views: 69.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 18:55:37 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:55:37 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 50ms (Views: 45.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 18:55:37 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:55:37 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:55:44 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (1.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2019-04-11 18:56:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:56:59 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 53ms (Views: 46.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:58:09 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?x=0" for 127.0.0.1 at 2019-04-11 18:58:12 -0500
+Processing by DashboardController#index as HTML
+  Parameters: {"x"=>"0"}
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 52ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?x=0" for 127.0.0.1 at 2019-04-11 18:58:13 -0500
+Processing by DashboardController#index as HTML
+  Parameters: {"x"=>"0"}
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 48ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?x=0" for 127.0.0.1 at 2019-04-11 18:58:14 -0500
+Processing by DashboardController#index as HTML
+  Parameters: {"x"=>"0"}
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (1.2ms)
+  Rendered dashboard/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 99ms (Views: 92.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard?x=0" for 127.0.0.1 at 2019-04-11 18:58:42 -0500
+Processing by DashboardController#index as HTML
+  Parameters: {"x"=>"0"}
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard/changer?x=3" for 127.0.0.1 at 2019-04-11 18:58:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard/changer"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/dashboard?x=0" for 127.0.0.1 at 2019-04-11 18:58:49 -0500
+Processing by DashboardController#index as HTML
+  Parameters: {"x"=>"0"}
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (1.2ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 54ms (Views: 48.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard?x=0" for 127.0.0.1 at 2019-04-11 18:58:59 -0500
+Processing by DashboardController#index as HTML
+  Parameters: {"x"=>"0"}
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=3" for 127.0.0.1 at 2019-04-11 18:59:00 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"3"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:59:00 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_nothing.html.erb (0.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 55ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 18:59:30 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_nothing.html.erb (0.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:00:09 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_nothing.html.erb (0.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 45ms (Views: 41.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:00:10 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:00:10 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 19:00:11 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:00:11 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=3" for 127.0.0.1 at 2019-04-11 19:00:14 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"3"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:00:14 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_nothing.html.erb (0.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 47ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:01:01 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_nothing.html.erb (0.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 59ms (Views: 55.7ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/__web_console/repl_sessions/c32083026038ee232ac16bacad9e180e" for 127.0.0.1 at 2019-04-11 19:01:04 -0500
+Started PUT "/__web_console/repl_sessions/c32083026038ee232ac16bacad9e180e" for 127.0.0.1 at 2019-04-11 19:01:09 -0500
+Started PUT "/__web_console/repl_sessions/c32083026038ee232ac16bacad9e180e" for 127.0.0.1 at 2019-04-11 19:01:25 -0500
+Started PUT "/__web_console/repl_sessions/c32083026038ee232ac16bacad9e180e" for 127.0.0.1 at 2019-04-11 19:01:41 -0500
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:02:03 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_nothing.html.erb (0.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:02:18 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_nothing.html.erb (0.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:02:24 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_nothing.html.erb (0.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 47ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:02:46 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_nothing.html.erb (0.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:06:08 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/RaulMuniz/Desktop/LeanMan/app/views/dashboard/index.html.erb:290: syntax error, unexpected tIDENTIFIER, expecting keyword_when
+              render 'load1'
+                    ^
+/Users/RaulMuniz/Desktop/LeanMan/app/views/dashboard/index.html.erb:292: syntax error, unexpected tIDENTIFIER, expecting keyword_when
+              render 'load2'
+                    ^
+/Users/RaulMuniz/Desktop/LeanMan/app/views/dashboard/index.html.erb:295: syntax error, unexpected keyword_end, expecting ')'
+            end             
+               ^
+/Users/RaulMuniz/Desktop/LeanMan/app/views/dashboard/index.html.erb:356: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/RaulMuniz/Desktop/LeanMan/app/views/dashboard/index.html.erb:358: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/dashboard/index.html.erb:290: syntax error, unexpected tIDENTIFIER, expecting keyword_when
+app/views/dashboard/index.html.erb:292: syntax error, unexpected tIDENTIFIER, expecting keyword_when
+app/views/dashboard/index.html.erb:295: syntax error, unexpected keyword_end, expecting ')'
+app/views/dashboard/index.html.erb:356: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/dashboard/index.html.erb:358: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:06:31 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/RaulMuniz/Desktop/LeanMan/app/views/dashboard/index.html.erb:290: syntax error, unexpected tIDENTIFIER, expecting keyword_when
+              render 'load1'
+                    ^
+/Users/RaulMuniz/Desktop/LeanMan/app/views/dashboard/index.html.erb:292: syntax error, unexpected tIDENTIFIER, expecting keyword_when
+              render 'load2'
+                    ^
+/Users/RaulMuniz/Desktop/LeanMan/app/views/dashboard/index.html.erb:295: syntax error, unexpected keyword_end, expecting ')'
+            end             
+               ^
+/Users/RaulMuniz/Desktop/LeanMan/app/views/dashboard/index.html.erb:356: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/RaulMuniz/Desktop/LeanMan/app/views/dashboard/index.html.erb:358: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/dashboard/index.html.erb:290: syntax error, unexpected tIDENTIFIER, expecting keyword_when
+app/views/dashboard/index.html.erb:292: syntax error, unexpected tIDENTIFIER, expecting keyword_when
+app/views/dashboard/index.html.erb:295: syntax error, unexpected keyword_end, expecting ')'
+app/views/dashboard/index.html.erb:356: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/dashboard/index.html.erb:358: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:07:46 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_nothing.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:11:04 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:11:04 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (1.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 54ms (Views: 49.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 19:11:21 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:11:21 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:11:22 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:11:22 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (1.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 64ms (Views: 60.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 19:11:23 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:11:23 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 72ms (Views: 68.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:11:24 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:11:24 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (1.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 86ms (Views: 81.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:11:43 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 68ms (Views: 65.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 19:11:45 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:11:45 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 47ms (Views: 42.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:11:46 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:11:46 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:11 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 51ms (Views: 45.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:12:16 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:16 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (1.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 19:12:17 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:17 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (1.2ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:12:18 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:18 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 19:12:22 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:22 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (1.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:12:23 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:23 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 19:12:26 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:26 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:12:27 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:27 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 19:12:30 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:30 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:12:35 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"1"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:35 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (1.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=2" for 127.0.0.1 at 2019-04-11 19:12:38 -0500
+Processing by DashboardController#changer as HTML
+  Parameters: {"x"=>"2"}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:12:38 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (1.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:19:43 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tool1" for 127.0.0.1 at 2019-04-11 19:19:45 -0500
+Processing by DashboardController#tool1 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:19:45 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (197.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (204.9ms)
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `changer_path' for #<#<Class:0x007fad2d4cd8f8>:0x007fad2f24cc08>):
+    1: <h1>h1</h1>s
+    2: <%= link_to "Load Part 2", changer_path(:x=>2) %>
+  
+app/views/dashboard/_load1.html.erb:2:in `_app_views_dashboard__load__html_erb___1991402421047620023_70190856619760'
+app/views/dashboard/index.html.erb:290:in `_app_views_dashboard_index_html_erb__2614232757445610021_70190898506460'
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:20:02 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (161.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (166.4ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tool_path' for #<#<Class:0x007fad2d4cd8f8>:0x007fad28c403d8>):
+    1: <h1>h1</h1>s
+    2: <%= link_to "Load Part 2", tool_path %>
+  
+app/views/dashboard/_load1.html.erb:2:in `_app_views_dashboard__load__html_erb___1991402421047620023_70190907082160'
+app/views/dashboard/index.html.erb:290:in `_app_views_dashboard_index_html_erb__2614232757445610021_70190845003720'
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:20:13 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-04-11 19:20:15 -0500
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:20:15 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load2.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tool1" for 127.0.0.1 at 2019-04-11 19:20:15 -0500
+Processing by DashboardController#tool1 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:20:15 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dashboard/index.html.erb:37
+  Rendered dashboard/_load1.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:20:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/changer"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/changer?x=1" for 127.0.0.1 at 2019-04-11 19:23:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/changer"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:24:03 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (1.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:24:04 -0500
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login.html" for 127.0.0.1 at 2019-04-11 19:24:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/login.html"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/sign_out" for 127.0.0.1 at 2019-04-11 19:24:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/sign_out"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/sign_out" for 127.0.0.1 at 2019-04-11 19:24:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user/sign_out"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-04-11 19:24:42 -0500
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:24:42 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:25:34 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 43ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool1" for 127.0.0.1 at 2019-04-11 19:25:35 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool1 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:25:35 -0500
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 57ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-04-11 19:25:36 -0500
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:25:36 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (0.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool1" for 127.0.0.1 at 2019-04-11 19:25:37 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool1 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:25:37 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-04-11 19:25:39 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:25:39 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:25:41 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (0.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool1" for 127.0.0.1 at 2019-04-11 19:25:42 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool1 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:25:42 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/changer?x=3" for 127.0.0.1 at 2019-04-11 19:25:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/changer"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:26:02 -0500
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nothing" for 127.0.0.1 at 2019-04-11 19:26:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/nothing"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:26:50 -0500
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nothing" for 127.0.0.1 at 2019-04-11 19:26:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/nothing"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:27:23 -0500
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nothing" for 127.0.0.1 at 2019-04-11 19:27:25 -0500
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#nothing as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:27:25 -0500
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_nothing.html.erb (0.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 43ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool1" for 127.0.0.1 at 2019-04-11 19:27:29 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool1 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:27:29 -0500
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-04-11 19:27:30 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:27:30 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool1" for 127.0.0.1 at 2019-04-11 19:27:31 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool1 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:27:31 -0500
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-04-11 19:27:39 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:27:39 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (0.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool1" for 127.0.0.1 at 2019-04-11 19:27:43 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool1 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-11 19:27:43 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
