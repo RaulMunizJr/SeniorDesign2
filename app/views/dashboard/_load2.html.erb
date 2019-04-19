@@ -15,7 +15,7 @@
     <title>Value Stream Mapping</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/grid/">
-
+    <%= stylesheet_link_tag "RaulCSS.css"%>
     <!-- Bootstrap core CSS -->
 <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -41,36 +41,104 @@
   <body class="py-4">
     <div class="container">
 
-  <center><h1>Value Stream Mapping</h1>
-  <p class="lead">A value stream map provides a useful overview of how and where value is added throughout the process of producing and distributing goods to customers—but it can be tricky to start from scratch.</p></center>
+      <div class="row">
+        <div class="col text-center">
+          <h1>Value Stream Mapping</h1>
+            <p class="lead">A value stream map provides a useful overview of how and where value is added throughout the process of producing and distributing goods to customers—but it can be tricky to start from scratch.</p>
 
-  <p>This value stream mapping template simplifies the process.</p>
-  <button type="button" class="btn float-right btn-info btn-sm ">Clear</button>
+            <p>This value stream mapping template simplifies the process.</p>
+            <button type="button" class="btn float-right btn-info btn-sm ">Clear</button>
+          </div>
+        </div>
+
 <br>
-  <div class="row mb-3" align="center">
-    <div class="col-4 offset-md-4 themed-grid-col">Production Control</div>
+  <div class="row mb-3 text-center">
+    <div class="col"></div>
+    <div class="col-4 themed-grid-col">Production Control</div>
+    <div class="col"></div>
   </div>
 
 <br><br>
 
-  <div class="row mb-3" align="center">
-    <div class="col-sm-3 themed-grid-col">Supplier</div>
-    
-    <div class="col-sm-3 offset-md-6 themed-grid-col">Customer</div>
+  <div class="row mb-3 text-center">
+    <div class="col-3 themed-grid-col">Supplier</div>
+    <div class="col"></div>
+    <div class="col-3 themed-grid-col">Customer</div>
   </div>
 
-<br><br>
+<br>
 
-<img style="height:75px" style="width:75px" <%= image_tag "truck.png"%>
+<img style="height:75px" style="width:75px" <%= image_tag "truck.png"%><img style="height:250px" style="width:75px" <%= image_tag "ArrowDown.png"%>
+
 <img class="float-right" style="height:75px" style="width:75px" <%= image_tag "truck.png"%>
+<img class="float-right" style="height:250px" style="width:75px" <%= image_tag "ArrowUp.png"%>
 
-<br><br><br><br><br><br><br>
+<br><br><br>
 
-  <div class="row mb-3">
-    <div class="col-md-4 themed-grid-col">.col-md-4</div>
-    <div class="col-md-4 themed-grid-col">.col-md-4</div>
-    <div class="col-md-4 themed-grid-col">.col-md-4</div>
+<!---------------------- Processes ------------------------->
+
+  <div class="row mb-3" align="center">
+
+    <div class="col-2 themed-grid-col">
+      <h5 class="card-header text-center">Process</h5>
+      <div class="card-body">
+      <h4 class="card-title">Rescources</h4>
+      <p class="card-text"></p>
+      <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
+      </div>
+    </div>
+
+
+    <div class="col">
+      
+      <div id="up">
+        <p>
+        Test
+        <p>
+      </div>
+    </div>
+
+
+    <div class="col-2 themed-grid-col">
+      <h5 class="card-header text-center">Process</h5>
+      <div class="card-body">
+      <h4 class="card-title">Rescources</h4>
+      <p class="card-text"></p>
+      <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
+      </div>
+    </div>
+
+
+    <div class="col"></div>
+
+
+    <div class="col-2  themed-grid-col">
+      <h5 class="card-header text-center">Process</h5>
+      <div class="card-body">
+      <h4 class="card-title">Rescources</h4>
+      <p class="card-text"></p>
+      <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
+      </div>
+    </div>
+
+
+    <div class="col"></div>
+
+
+    <div class="col-2  themed-grid-col">
+      <h5 class="card-header text-center">Process</h5>
+      <div class="card-body">
+      <h4 class="card-title">Rescources</h4>
+      <p class="card-text"></p>
+      <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
+      </div>
+    </div>
+
   </div>
+
+
+
+
 
   <div class="row mb-3">
     <div class="col-lg-4 themed-grid-col">.col-lg-4</div>

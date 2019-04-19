@@ -1,0 +1,25 @@
+/*My Custom CSS file*/
+
+#up {
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 0 50px 86.6px 50px;
+  border-color: transparent transparent #007bff transparent;
+  float: left;
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+#up p {
+  text-align: center;
+  top: 30px;
+  left: -23.5px;
+  position: relative;
+  width: 46.5px;
+  height: 46.5px;
+  margin: 0px;
+}
