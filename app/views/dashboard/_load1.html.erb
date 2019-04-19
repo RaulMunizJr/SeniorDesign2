@@ -11,9 +11,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/grid/">
 
     <!-- Bootstrap core CSS -->
-<link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
+    <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -30,11 +28,13 @@
         }
       }
     </style>
+
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.3/examples/grid/grid.css" rel="stylesheet">
   </head>
-  <body class="py-4">
-    <div class="container">
+  
+<body class="py-4">
+<div class="container">
 
   <h1>SIPOC</h1>
   <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
@@ -44,50 +44,126 @@
   <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
 
     <!-- TITLE FOR EACH OF THE TOOLS -->
-    <center>
-      <div class="row mb-5">
-        <tr>
-          <div class="col-2 offset-md-1 text-center mr-2 themed-grid-col bg-info text-white">S</div>
-          <div class="col-2 text-center mr-2 themed-grid-col bg-info text-white">I</div>
-          <div class="col-2 text-center mr-2 themed-grid-col bg-info text-white">P</div>
-          <div class="col-2 text-center mr-2 themed-grid-col bg-info text-white">O</div>
-          <div class="col-2 text-center themed-grid-col bg-info text-white">C</div>
-        </tr>
+    <div class="row">
+      <div class="col-12">
+        <div class="row mb-3">
+          <div class="col font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>S</h3></div>
+          <div class="col font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>I</h3></div>
+          <div class="col  font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>Process Req.</h3></div>
+          <div class="col  font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>P</h3></div>
+          <div class="col font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>O</h3></div>
+          <div class="col  font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>Customer Req.</h3></div>
+          <div class="col font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>C</h3></div>
+        </div>
+
+        <div class="row mb-5">
+          <tr>
+            <div class="col text-center mr-2 themed-grid-col bg-light text-white"><img style="height:75px" style="width:75px" <%= image_tag "supplier.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-warning text-white"><img style="height:75px" style="width:75px" <%= image_tag "input.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-light text-white"></div>
+            <div class="col text-center mr-2 themed-grid-col bg-secondary text-white"><img style="height:75px" style="width:75px" <%= image_tag "process.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-success text-white"><img style="height:75px" style="width:75px" <%= image_tag "output.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-light text-white"></div>
+            <div class="col text-center themed-grid-col bg-info text-white"><center><img style="height:75px" style="width:75px" <%= image_tag "customer.png"%></center></div>
+          </tr>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col mr-2 themed-grid-col">
+              <input type="supplier" class="form-control" id="exampleSupplier1" aria-describedby="supplierHelp" placeholder="Enter Supplier">
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <input type="input" class="form-control" id="exampleInput1" aria-describedby="inputHelp" placeholder="Enter Input">
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <input type="process" class="form-control" id="exampleProcess1" aria-describedby="processHelp" placeholder="Enter Process">
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <input type="output" class="form-control" id="exampleOutput1" aria-describedby="outputHelp" placeholder="Enter Output">
+            </div>
+            <div class="col themed-grid-col">
+              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="supplier" class="form-control" id="exampleSupplier2" aria-describedby="supplierHelp" placeholder="Enter Supplier">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="input" class="form-control" id="exampleInput2" aria-describedby="inputHelp" placeholder="Enter Input">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="process" class="form-control" id="exampleProcess2" aria-describedby="processHelp" placeholder="Enter Process">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="output" class="form-control" id="exampleOutput2" aria-describedby="outputHelp" placeholder="Enter Output">
+            </div>
+            <div class="col-1 themed-grid-col">
+              <input type="customer" class="form-control" id="exampleCustomer2" aria-describedby="customerHelp" placeholder="Enter Customer">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="supplier" class="form-control" id="exampleSupplier3" aria-describedby="supplierHelp" placeholder="Enter Supplier">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="input" class="form-control" id="exampleInput3" aria-describedby="inputHelp" placeholder="Enter Input">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="process" class="form-control" id="exampleProcess3" aria-describedby="processHelp" placeholder="Enter Process">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="output" class="form-control" id="exampleOutput3" aria-describedby="outputHelp" placeholder="Enter Output">
+            </div>
+            <div class="col-1 themed-grid-col">
+              <input type="customer" class="form-control" id="exampleCustomer3" aria-describedby="customerHelp" placeholder="Enter Customer">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="supplier" class="form-control" id="exampleSupplier4" aria-describedby="supplierHelp" placeholder="Enter Supplier">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="input" class="form-control" id="exampleInput4" aria-describedby="inputHelp" placeholder="Enter Input">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="process" class="form-control" id="exampleProcess4" aria-describedby="processHelp" placeholder="Enter Process">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="output" class="form-control" id="exampleOutput4" aria-describedby="outputHelp" placeholder="Enter Output">
+            </div>
+            <div class="col-1 themed-grid-col">
+              <input type="customer" class="form-control" id="exampleCustomer4" aria-describedby="customerHelp" placeholder="Enter Customer">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="supplier" class="form-control" id="exampleSupplier5" aria-describedby="supplierHelp" placeholder="Enter Supplier">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="input" class="form-control" id="exampleInput5" aria-describedby="inputHelp" placeholder="Enter Input">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="process" class="form-control" id="exampleProcess5" aria-describedby="processHelp" placeholder="Enter Process">
+            </div>
+            <div class="col-1 mr-2 themed-grid-col">
+              <input type="output" class="form-control" id="exampleOutput5" aria-describedby="outputHelp" placeholder="Enter Output">
+            </div>
+            <div class="col-1 themed-grid-col">
+              <input type="customer" class="form-control" id="exampleCustomer5" aria-describedby="customerHelp" placeholder="Enter Customer">
+            </div>
+        </div>
       </div>
+    </div>
+
+    <br>
+    <center>
+      <input name="commit" type="submit" value="Submit" />
     </center>
-
-    <div class="row mb-3">
-      <div class="col-2 offset-md-1 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 themed-grid-col">.col-4</div>
-    </div>
-
-    <div class="row mb-3">
-      <div class="col-2 offset-md-1 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <span class="glyphicon glyphicon-arrow-down"></span>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 themed-grid-col">.col-4</div>
-    </div>
-
-    <div class="row mb-3">
-      <div class="col-2 offset-md-1 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 themed-grid-col">.col-4</div>
-    </div>
-
-    <div class="row mb-3">
-      <div class="col-2 offset-md-1 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 mr-2 themed-grid-col">.col-4</div>
-        <div class="col-2 themed-grid-col">.col-4</div>
-    </div>
 
 </div> <!-- /container -->
 </body>
