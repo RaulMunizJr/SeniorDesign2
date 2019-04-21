@@ -1,3 +1,4 @@
+<!---- Old
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
 
 
@@ -21,15 +22,15 @@
             <hr class="light my-4">
             <p class="text-faded mb-4">Type your e-mail and pasword below.</p></center>
 
-            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <#%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
             
             <div align="center">
 
               <div class="form-group">
                 <div class="form-group col-md-6"> 
                   <div class="field">
-                    <h5><%= f.label :email %></h5>
-                    <%= f.email_field :email, autofocus: true, placeholder: "email@example.com", class: "form-control" %>
+                    <h5><#%= f.label :email %></h5>
+                    <#%= f.email_field :email, autofocus: true, placeholder: "email@example.com", class: "form-control" %>
                   </div>
                 </div>
               </div>
@@ -37,20 +38,20 @@
               <div class="form-group">
                 <div class="form-group col-md-6"> 
                   <div class="field">
-                    <h5><%= f.label :password %></h5>
-                    <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+                    <h5><#%= f.label :password %></h5>
+                    <#%= f.password_field :password, autocomplete: "off", class: "form-control" %>
                   </div>
                 </div>
               </div>
 
               <div class="form-group">
                 <div class="form-group col-md-6"> 
-                  <% if devise_mapping.rememberable? -%>
+                  <#% if devise_mapping.rememberable? -%>
                   <div class="field">
-                    <%= f.check_box :remember_me %>
-                    <%= f.label :remember_me %>
+                    <#%= f.check_box :remember_me %>
+                    <#%= f.label :remember_me %>
                   </div>
-                  <% end -%>
+                  <#% end %>
                 </div>
               </div>
 
@@ -59,15 +60,130 @@
             <div class="row">
               <div class="col">
                 <div class="actions">
-                  <%= f.submit "Log in", class: 'btn btn-light btn-xl js-scroll-trigger' %>
+                  <#%= f.submit "Log in", class: 'btn btn-light btn-xl js-scroll-trigger' %>
                 </div>
-                <% end %>
+                <#% end %>
               </div>
             </div>
             <br>
-            <%= render "devise/shared/links"%>
+            <#%= render "devise/shared/links"%>
             <br>
       </div>
           </div>
         </div>
       </div>
+---->
+<!----------- New and improved ------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Login</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+  <link href="https://getbootstrap.com/docs/4.3/examples/product/product.css" rel="stylesheet">
+<nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="/">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Sign In</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+    </a>
+  </div>
+</nav>
+
+  <div class="container">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                  </div>
+                  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                  <form class="user">
+                    <div class="form-group">
+                    <%= f.email_field :email, autofocus: true, placeholder: "Email@example.com", class: "form-control form-control-user" %>
+                    </div>
+                    <div class="form-group">
+                    <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control form-control-user" %>
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        
+                        <% if devise_mapping.rememberable? -%>
+                  <div class="field">
+                          <%= f.check_box :remember_me, class: "custom-control-input" %>
+                          <%= f.label :remember_me, class: "custom-control-label" %>
+                  </div>
+                        <% end %>
+                    </div>
+                      <%= f.submit "Login", class: 'btn btn-primary btn-user btn-block' %>
+               
+                    <% end %>
+                    <hr>
+                    <a href="#" class="btn btn-google btn-user btn-block">
+                      <i class="fab fa-google fa-fw"></i> Login with Google
+                    </a>
+                    <a href="#" class="btn btn-facebook btn-user btn-block">
+                      <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
+                    </a>
+                  </form>
+                  <hr>
+                  <div class="text-center">
+                    <a class="small" href="/users/password/new">Forgot Password?</a>
+                  </div>
+                  <div class="text-center">
+                    <a class="small" href="/users/sign_up">Create an Account!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/jquery/jquery.min.js"></script>
+  <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
+
+

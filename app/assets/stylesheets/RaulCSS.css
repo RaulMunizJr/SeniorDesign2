@@ -66,3 +66,20 @@
                 -khtml-user-select: none;     
                 user-select: none;
             }
+
+
+.container-fluid {
+  background-image: url("utrgv.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /*background-position: right 300px bottom 300px;*/
+
+}
+
+#hidden {
+  visibility: hidden;
+}
+
+
+

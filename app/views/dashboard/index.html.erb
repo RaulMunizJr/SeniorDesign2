@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -43,7 +43,7 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="/nothing">
-          <i class="fas fa-calendar-alt"></i>
+          <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Clear</span></a>
       </li>
 
@@ -59,7 +59,7 @@
       <li class="nav-item">
         <a class="nav-link" href="/tool1">
           <i class="fas fa-columns"></i>
-          <span>Tool 1</span></a>
+          <span>S I P O C</span></a>
       </li>
 
       <li class="nav-item">
@@ -70,13 +70,13 @@
 
       <li class="nav-item">
         <a class="nav-link" href="">
-          <i class="fas fa-city"></i>
+          <i class="fas fa-fw fa-chart-area"></i>
           <span>Tool 3</span></a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link" href="">
-          <i class="fas fa-box-open"></i>
+          <i class="fas fa-fw fa-table"></i>
           <span>Tool 4</span></a>
       </li>
 
@@ -251,7 +251,7 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><%= current_user.email =%></span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -279,6 +279,8 @@
 
         </nav>
         <!-- End of Topbar -->
+        
+
 
         <!--------------------------------- Partials -------------------------------------------->
         <div class="container-fluid">
@@ -325,7 +327,7 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" ><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link"%></a>
+          <a><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-primary"%></a>
         </div>
       </div>
     </div>
