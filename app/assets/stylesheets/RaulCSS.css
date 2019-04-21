@@ -1,11 +1,12 @@
 /*My Custom CSS file*/
 
+/* Triangle */
 #up {
   width: 0px;
   height: 0px;
   border-style: inset;
   border-width: 0 35px 53.3px 35px;
-  border-color: transparent transparent #007bff transparent;
+  border-color: transparent transparent #F3F337 transparent;
   float: left;
   transform: rotate(360deg);
   -ms-transform: rotate(360deg);
@@ -23,3 +24,45 @@
   height: 23.25px;
   margin: 0px;
 }
+
+/* Vertical Line */
+#vl {
+  border-left: 6px solid #2A74D5;
+  height: 25px;
+  position: relative;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+
+#linezone {
+                position:absolute;
+                background-color: #F7FBFE;
+                }
+            #elem{
+                position: absolute;
+                background-color: green;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -o-user-select: none;
+                -ms-user-select: none;
+                -khtml-user-select: none;     
+                user-select: none;
+            }
