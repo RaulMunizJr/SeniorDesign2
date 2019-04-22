@@ -27,10 +27,9 @@
 
 /* Vertical Line */
 #vl {
-  border-left: 6px solid #2A74D5;
+  border-left: 6px solid blue;
   height: 25px;
   position: relative;
-  left: 50%;
   margin-left: -3px;
   top: 0;
 }
@@ -81,5 +80,39 @@
   visibility: hidden;
 }
 
+/*vertical line*/
+#verticalLine {
+  border-left: thick solid blue;
+  padding: 40px 0px 0px 0px;
+  position: absolute;
+}
 
+.horizontalLine {
+        background-color:blue;
+        width: 150px;
+        padding: 10px 0.5px 0.5px 0.5px;
+        position: absolute;
+}
+
+.BhorizontalLine {
+        color: #f00;
+     background: #f00; 
+     width: 12%; 
+     height: 5px;
+     position: absolute;
+
+}
+
+.shortBhorizontalLine {
+        color: #f00;
+     background: #f00; 
+     width: 7.3%; 
+     height: 5px;
+     position: absolute;
+
+}
+
+
+
+/* top ; right ;  bottom ; left*/
 
