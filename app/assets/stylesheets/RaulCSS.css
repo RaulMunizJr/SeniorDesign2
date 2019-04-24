@@ -85,31 +85,48 @@
   border-left: thick solid blue;
   padding: 40px 0px 0px 0px;
   position: absolute;
+  left:114px;
+  top:1474px;
 }
 
 .horizontalLine {
         background-color:blue;
-        width: 150px;
-        padding: 10px 0.5px 0.5px 0.5px;
+        width: 154px;
+        height: 5px;
         position: absolute;
+        left:114px;
+        top:1470px;
 }
 
 .BhorizontalLine {
-        color: #f00;
+     color: #f00;
      background: #f00; 
-     width: 12%; 
+     width: 154px; 
      height: 5px;
      position: absolute;
+     left:259px;
+     top:1513px;
+     
 
 }
 
 .shortBhorizontalLine {
-        color: #f00;
+     color: #f00;
      background: #f00; 
-     width: 7.3%; 
+     width: 81px; 
      height: 5px;
+     top: 1513px;
      position: absolute;
 
+}
+
+.ShorizontalLine {
+        background-color:blue;
+        width: 70px;
+        height: 5px;
+        position: absolute;
+        left:114px;
+        top:1470px;
 }
 
 
