@@ -39,6 +39,13 @@
     <link href="https://getbootstrap.com/docs/4.3/examples/grid/grid.css" rel="stylesheet">
   </head>
   <body class="py-4">
+  	<nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="/dashboard">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>New VSM</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+        </a>
+      </div>
+    </nav>
     <div class="container">
 
       <div class="row">
@@ -52,7 +59,7 @@
         </div>
         
 <br>
-  <button class="btn float-left btn-info btn-md"><a href="vsms/new" class="text-white">New</a></button>
+<button type="button" class="btn float-left btn-info btn-md ">Save</button>
   <div class="row mb-3 text-center">
     <div class="col"></div>
     <div class="col-4 themed-grid-col"><h5 class="card-header text-center">Production Control</h5></div>
@@ -80,8 +87,10 @@
 
 <br><br><br>
 
+<%= form_for @vsm do |f| %>
+
 <div class="float-left" id="up">
-        <p>I</p>
+        <p><%= f.number_field :inventory1 %></p>
 </div>
       <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
 
@@ -89,13 +98,14 @@
 
 <!---------------------- Processes ------------------------->
 
+
   <div class="row mb-3 text-center">
 
     <div class="col-2 themed-grid-col">
-      <h5 class="card-header text-center">Process</h5>
+      <h5 class="card-header text-center"><%= f.text_field :processA %></h5>
       <div class="card-body">
       <h4 class="card-title"></h4>
-      <p class="card-text"><strong>Rescources</strong></p>
+      <p class="card-text"><strong><%= f.text_area :resourceA %></strong></p>
       <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
       </div>
     </div>
@@ -105,7 +115,7 @@
       
       <div id="up">
         <p>
-        I
+        <%= f.number_field :inventory2 %>
         </p>
       </div>
       <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
@@ -113,10 +123,10 @@
     </div>
 
     <div class="col-2 themed-grid-col">
-      <h5 class="card-header text-center">Process</h5>
+      <h5 class="card-header text-center"><%= f.text_field :processB %></h5>
       <div class="card-body">
       <h4 class="card-title"></h4>
-      <p class="card-text"><strong>Rescources</strong></p>
+      <p class="card-text"><strong><%= f.text_area :resourceB %></strong></p>
       <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
       </div>
     </div>
@@ -126,7 +136,7 @@
       
       <div id="up">
         <p>
-        I
+        <%= f.number_field :inventory3 %>
         </p>
       </div>
       <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
@@ -135,10 +145,10 @@
 
 
     <div class="col-2  themed-grid-col">
-      <h5 class="card-header text-center">Process</h5>
+      <h5 class="card-header text-center"><%= f.text_field :processC %></h5>
       <div class="card-body">
       <h4 class="card-title"></h4>
-      <p class="card-text"><strong>Rescources</strong></p>
+      <p class="card-text"><strong><%= f.text_area :resourceC %></strong></p>
       <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
       </div>
     </div>
@@ -148,7 +158,7 @@
       
       <div id="up">
         <p>
-        I
+        <%= f.number_field :inventory4 %>
         </p>
       </div>
       <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
@@ -157,10 +167,10 @@
 
 
     <div class="col-2  themed-grid-col">
-      <h5 class="card-header text-center">Process</h5>
+      <h5 class="card-header text-center"><%= f.text_field :processD %></h5>
       <div class="card-body text-center">
       <h4 class="card-title"></h4>
-      <p class="card-text"><strong>Rescources</strong></p>
+      <p class="card-text"><strong><%= f.text_area :resourceD %></strong></p>
       <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
       </div>
     </div>
@@ -171,11 +181,11 @@
 <div class="row mb-3 text-center">
 
     <div class="col-2 themed-grid-col text-center">
-      <div class="col-12  themed-grid-col" style="height:37px">Data 1</div>
+      <div class="col-12  themed-grid-col" style="height:37px"><%= f.text_field :dataA1 %></div>
       <div class="col"></div>
-      <div class="col-12 themed-grid-col" style="height:37px">Data 2</div>
+      <div class="col-12 themed-grid-col" style="height:37px"><%= f.text_field :dataA2 %></div>
       <div class="col"></div>
-      <div class="col-12  themed-grid-col" style="height:37px">Data 3</div>
+      <div class="col-12  themed-grid-col" style="height:37px"><%= f.text_field :dataA3 %></div>
     </div>
 
 
@@ -183,11 +193,11 @@
 
 
     <div class="col-2 themed-grid-col text-center">
-      <div class="col-12  themed-grid-col" style="height:37px">Data 1</div>
+      <div class="col-12  themed-grid-col" style="height:37px"><%= f.text_field :dataB1 %></div>
       <div class="col"></div>
-      <div class="col-12 themed-grid-col" style="height:37px">Data 2</div>
+      <div class="col-12 themed-grid-col" style="height:37px"><%= f.text_field :dataB2 %></div>
       <div class="col"></div>
-      <div class="col-12  themed-grid-col" style="height:37px">Data 3</div>
+      <div class="col-12  themed-grid-col" style="height:37px"><%= f.text_field :dataB3 %></div>
     </div>
 
 
@@ -195,11 +205,11 @@
 
 
     <div class="col-2 themed-grid-col text-center">
-      <div class="col-12  themed-grid-col" style="height:37px">Data 1</div>
+      <div class="col-12  themed-grid-col" style="height:37px"><%= f.text_field :dataC1 %></div>
       <div class="col"></div>
-      <div class="col-12 themed-grid-col" style="height:37px">Data 2</div>
+      <div class="col-12 themed-grid-col" style="height:37px"><%= f.text_field :dataC2 %></div>
       <div class="col"></div>
-      <div class="col-12  themed-grid-col" style="height:37px">Data 3</div>
+      <div class="col-12  themed-grid-col" style="height:37px"><%= f.text_field :dataC3 %></div>
     </div>
 
 
@@ -207,11 +217,11 @@
 
 
     <div class="col-2 themed-grid-col text-center">
-      <div class="col-12  themed-grid-col" style="height:37px">Data 1</div>
+      <div class="col-12  themed-grid-col" style="height:37px"><%= f.text_field :dataD1 %></div>
       <div class="col"></div>
-      <div class="col-12 themed-grid-col" style="height:37px">Data 2</div>
+      <div class="col-12 themed-grid-col" style="height:37px"><%= f.text_field :dataD2 %></div>
       <div class="col"></div>
-      <div class="col-12  themed-grid-col" style="height:37px">Data 3</div>
+      <div class="col-12  themed-grid-col" style="height:37px"><%= f.text_field :dataD3 %></div>
     </div>
 
 </div>    
@@ -275,7 +285,7 @@
 
 
 
-
+<% end %>
 
 </div> <!-- /container -->
 </body>

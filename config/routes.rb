@@ -12,6 +12,16 @@ Rails.application.routes.draw do
   get :tool2, to: "dashboard#tool2"
   get :nothing, to: "dashboard#nothing"
 
+  get '/vsms', to: 'vsms#index'
+  get '/vsms/new', to: 'vsms#new', as: 'new_vsm'
+  post '/vsms/', to: "vsms#create"
+  get '/vsms/:id/edit', to: "vsms#edit", as: 'edit_vsm'
+  patch '/vsms/:id', to: 'vsms#update' #submission
+  get'/vsms/:id', to: 'vsms#show' #display
+  delete '/vsms/:id', to: 'vsms#destroy'
+
+  #resources :vsm #same as commented above
+
 end
 	
 	unauthenticated do
