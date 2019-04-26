@@ -76,6 +76,15 @@
 
 }
 
+#background {
+  background-image: url("utrgv.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #F7FBFE;
+  /*background-position: right 300px bottom 300px;*/
+}
+
 #hidden {
   visibility: hidden;
 }
@@ -137,6 +146,65 @@
         left:114px;
         top:1470px;
 }
+
+/*******NEW VSM*******/
+#NverticalLine {
+  border-left: thick solid blue;
+  padding: 40px 0px 0px 0px;
+  position: absolute;
+  left:64px;
+  top:1574px;
+}
+
+.NhorizontalLine {
+        background-color:blue;
+        width: 154px;
+        height: 5px;
+        position: absolute;
+        left:64px;
+        top:1570px;
+}
+
+.NBhorizontalLine {
+     color: #f00;
+     background: #f00; 
+     width: 154px; 
+     height: 5px;
+     position: absolute;
+     left:209px;
+     top:1613px;
+     
+
+}
+
+.NshortBhorizontalLine {
+     color: #f00;
+     background: #f00; 
+     width: 81px; 
+     height: 5px;
+     top: 1613px;
+     position: absolute;
+
+}
+
+.NShorizontalLine {
+        background-color:blue;
+        width: 70px;
+        height: 5px;
+        position: absolute;
+        left:64px;
+        top:1570px;
+}
+
+.NSShorizontalLine {
+        background-color:blue;
+        width: 67px;
+        height: 5px;
+        position: absolute;
+        left:64px;
+        top:1570px;
+}
+
 
 
 

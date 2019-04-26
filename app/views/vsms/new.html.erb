@@ -90,8 +90,8 @@
 
 
 <div class="form-row">
-  <div class="form-group col-12">
-  <%= f.number_field :inventory1, :class=>"form-control col-1 my-1 float-left" %>
+  <div class="form-group">
+  <%= f.number_field :inventory1, :class=>"form-control col-6 m1-1 float-left" %>
 </div>
 </div>
 
@@ -99,13 +99,13 @@
 <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
 <div class="form-inline">
   <div class="form-group">
-  <%= f.number_field :inventory2, :class=>"form-control col-6 my-1" %>
+  <%= f.number_field :inventory2, :class=>"form-control col-6 ml-1" %>
 </div>
 <div class="form-group">
-  <%= f.number_field :inventory3, :class=>"form-control col-6 my-1" %>
+  <%= f.number_field :inventory3, :class=>"form-control col-6 ml-1" %>
 </div>
 <div class="form-group">
-  <%= f.number_field :inventory4, :class=>"form-control col-6 my-1" %>
+  <%= f.number_field :inventory4, :class=>"form-control col-6 ml-1" %>
 </div>
 </div>
 
@@ -118,7 +118,7 @@
       <h5 class="card-header text-center"><%= f.text_field :processA, :class=>"form-control" %></h5>
       <div class="card-body">
       <h4 class="card-title"></h4>
-      <p class="card-text" style="width:127px"><strong><%= f.text_area :resourceA, :row=>3, :class=>"form-control"%></strong></p>
+      <p class="card-text" style="width:127px"><strong><%= f.text_area :resourceA, rows: 5, :class=>"form-control"%></strong></p>
       <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
       </div>
     </div>
@@ -139,7 +139,7 @@
       <h5 class="card-header text-center"><%= f.text_field :processB, :class=>"form-control" %></h5>
       <div class="card-body">
       <h4 class="card-title"></h4>
-      <p class="card-text" style="width:127px"><strong><%= f.text_area :resourceB, :row=>3, :class=>"form-control" %></strong></p>
+      <p class="card-text" style="width:127px"><strong><%= f.text_area :resourceB, rows: 5, :class=>"form-control" %></strong></p>
       <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
       </div>
     </div>
@@ -161,7 +161,7 @@
       <h5 class="card-header text-center"><%= f.text_field :processC, :class=>"form-control" %></h5>
       <div class="card-body">
       <h4 class="card-title"></h4>
-      <p class="card-text" style="width:127px"><strong><%= f.text_area :resourceC, :row=>3, :class=>"form-control" %></strong></p>
+      <p class="card-text" style="width:127px"><strong><%= f.text_area :resourceC, rows: 5, :class=>"form-control" %></strong></p>
       <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
       </div>
     </div>
@@ -183,7 +183,7 @@
       <h5 class="card-header text-center"><%= f.text_field :processD, :class=>"form-control" %></h5>
       <div class="card-body text-center">
       <h4 class="card-title"></h4>
-      <p class="card-text" style="width:127px"><strong><%= f.text_area :resourceD, :row=>3, :class=>"form-control" %></strong></p>
+      <p class="card-text" style="width:127px"><strong><%= f.text_area :resourceD, rows: 5, :class=>"form-control" %></strong></p>
       <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
       </div>
     </div>
@@ -194,11 +194,11 @@
 <div class="row mb-3 text-center">
 
     <div class="col-2 themed-grid-col text-center">
-      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataA1, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataA1, :class=>"form-control form-control form-control-sm ml-1 " %></div>
       <div class="col"></div>
-      <div class="col-12 themed-grid-col" style="height:55px"><%= f.text_field :dataA2, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12 themed-grid-col" style="height:55px"><%= f.text_field :dataA2, :class=>"form-control form-control form-control-sm ml-1 " %></div>
       <div class="col"></div>
-      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataA3, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataA3, :class=>"form-control form-control form-control-sm ml-1 " %></div>
     </div>
 
 
@@ -206,11 +206,11 @@
 
 
     <div class="col-2 themed-grid-col text-center">
-      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataB1, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataB1, :class=>"form-control form-control form-control-sm ml-1 " %></div>
       <div class="col"></div>
-      <div class="col-12 themed-grid-col" style="height:55px"><%= f.text_field :dataB2, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12 themed-grid-col" style="height:55px"><%= f.text_field :dataB2, :class=>"form-control form-control form-control-sm ml-1 " %></div>
       <div class="col"></div>
-      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataB3, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataB3, :class=>"form-control form-control form-control-sm ml-1 " %></div>
     </div>
 
 
@@ -218,11 +218,11 @@
 
 
     <div class="col-2 themed-grid-col text-center">
-      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataC1, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataC1, :class=>"form-control form-control form-control-sm ml-1 " %></div>
       <div class="col"></div>
-      <div class="col-12 themed-grid-col" style="height:55px"><%= f.text_field :dataC2, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12 themed-grid-col" style="height:55px"><%= f.text_field :dataC2, :class=>"form-control form-control form-control-sm ml-1 " %></div>
       <div class="col"></div>
-      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataC3, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataC3, :class=>"form-control form-control form-control-sm ml-1 " %></div>
     </div>
 
 
@@ -230,11 +230,11 @@
 
 
     <div class="col-2 themed-grid-col text-center">
-      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataD1, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataD1, :class=>"form-control form-control form-control-sm ml-1 " %></div>
       <div class="col"></div>
-      <div class="col-12 themed-grid-col" style="height:55px"><%= f.text_field :dataD2, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12 themed-grid-col" style="height:55px"><%= f.text_field :dataD2, :class=>"form-control form-control form-control-sm ml-1 " %></div>
       <div class="col"></div>
-      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataD3, :class=>"form-control form-control form-control-sm ml-1 fix_number_choice" %></div>
+      <div class="col-12  themed-grid-col" style="height:55px"><%= f.text_field :dataD3, :class=>"form-control form-control form-control-sm ml-1 " %></div>
     </div>
 
 </div>    
@@ -242,16 +242,33 @@
 
 <!---------------------- Lead Time Ladder ----------------->
 
-<div class="horizontalLine"></div>
-<div id="verticalLine"></div>
-<div id="verticalLine" style="left: 263px"></div>
-<div class="horizontalLine" style="left: 412px"></div>
-<div id="verticalLine" style="left: 412px"></div>
-<div id="verticalLine" style="left: 561px"></div>
-<div id="verticalLine" style="left: 710px"></div>
-<div class="horizontalLine" style="left: 710px"></div>
-<div id="verticalLine" style="left: 859px"></div>
-<div id="verticalLine" style="left: 1008px"></div>
+
+<div class="NhorizontalLine"></div>
+<div id="NverticalLine"></div>
+<div id="NverticalLine" style="left: 213px"></div>
+<div class="NhorizontalLine" style="left: 362px"></div>
+<div id="NverticalLine" style="left: 362px"></div>
+<div id="NverticalLine" style="left: 511px"></div>
+<div id="NverticalLine" style="left: 660px"></div>
+<div class="NhorizontalLine" style="left: 660px"></div>
+<div id="NverticalLine" style="left: 809px"></div>
+<div id="NverticalLine" style="left: 958px"></div>
+
+
+<div class="form-inline">
+  <div class="form-group">
+    <%= f.number_field :PLT1, :class=>"form-control form-control-sm col-6 ml-1 " %>
+  </div>
+  <div class="form-group">
+    <%= f.number_field :PLT2, :class=>"form-control form-control-sm col-6 ml-1 " %>
+  </div>
+  <div class="form-group">
+    <%= f.number_field :PLT3, :class=>"form-control form-control-sm col-6 ml-1 " %>
+  </div>
+  <div class="form-group">
+    <%= f.number_field :PLT4, :class=>"form-control form-control-sm col-6 ml-1 " %>
+  </div>
+</div>
 
 
 <span style="top: 1513px">
@@ -264,12 +281,25 @@
     
 </div>
 </span>
-<div class="BhorizontalLine" style="left: 263px"></div>
-<div class="BhorizontalLine" style="left: 562px"></div>
-<div class="BhorizontalLine" style="left: 859px"></div>
+
+<div class="form-inline">
+  <div class="form-group">
+    <%= f.number_field :PT1, :class=>"form-control form-control-sm col-6 ml-1 " %>
+  </div>
+  <div class="form-group">
+    <%= f.number_field :PT2, :class=>"form-control form-control-sm col-6 ml-1 " %>
+  </div>
+  <div class="form-group">
+    <%= f.number_field :PT3, :class=>"form-control form-control-sm col-6 ml-1 " %>
+  </div>
+</div>
+
+<div class="NBhorizontalLine" style="left: 213px"></div>
+<div class="NBhorizontalLine" style="left: 512px"></div>
+<div class="NBhorizontalLine" style="left: 809px"></div>
 
 
-<div class="SShorizontalLine" style="left: 1008px"></div>
+<div class="NSShorizontalLine" style="left: 958px"></div>
 <center>
 <%= f.submit 'Create VSM', class: "btn btn-success"%>
 </center>

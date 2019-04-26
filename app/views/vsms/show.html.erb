@@ -1,1 +1,290 @@
-<h1>show vsms</h1>
+<!--
+<h1>Load 2</h1>
+
+<%= link_to "Load Part 1", tool1_path %>
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Value Stream Mapping</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/grid/">
+    <%= stylesheet_link_tag "RaulCSS.css"%>
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.3/examples/grid/grid.css" rel="stylesheet">
+  </head>
+  <body class="py-4" id="background">
+
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+
+      <div class="row">
+        <div class="col text-center">
+          <h1>Value Stream Mapping</h1>
+            <p class="lead"><%=@vsm.file_name%></p>
+            <p>By: <%= current_user.email =%></p>
+            
+          </div>
+        </div>
+        
+<br>
+  <div class="row mb-3 text-center">
+    <div class="col"></div>
+    <div class="col-4 themed-grid-col"><h5 class="card-header text-center">Production Control</h5></div>
+    <div class="col"></div>
+  </div>
+
+<br><br>
+
+  <div class="row mb-3 text-center">
+    <div class="col-3 themed-grid-col"><h5 class="card-header text-center">Supplier</h5></div>
+    <div class="col"></div>
+    <div class="col-3 themed-grid-col"><h5 class="card-header text-center">Customer</h5></div>
+  </div>
+<p class="float-right"><i>Monthly</i></p>
+
+
+<br>
+<p><i>Weekly</i></p>
+<img style="height:65px" style="width:65px" <%= image_tag "truck.png"%>
+<img style="height:200px" style="width:70px" <%= image_tag "ArrowDown.png"%>
+
+
+<img class="float-right" style="height:65px" style="width:65px" <%= image_tag "truck.png"%>
+<img class="float-right" style="height:200px" style="width:70px" <%= image_tag "ArrowUp.png"%>
+
+<br><br><br>
+
+<div class="float-left" id="up">
+        <p>I</p>
+</div>
+      <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
+
+<br><br>
+
+<!---------------------- Processes ------------------------->
+
+  <div class="row mb-3 text-center">
+
+    <div class="col-2 themed-grid-col">
+      <h5 class="card-header text-center"><%=@vsm.processA%></h5>
+      <div class="card-body">
+      <h4 class="card-title"></h4>
+      <p class="card-text"><strong><%=@vsm.resourceA%></strong></p>
+      <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
+      </div>
+    </div>
+
+
+    <div class="col">
+      
+      <div id="up">
+        <p>
+        I
+        </p>
+      </div>
+      <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
+
+    </div>
+
+    <div class="col-2 themed-grid-col">
+      <h5 class="card-header text-center"><%=@vsm.processB%></h5>
+      <div class="card-body">
+      <h4 class="card-title"></h4>
+      <p class="card-text"><strong><%=@vsm.resourceB%></strong></p>
+      <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
+      </div>
+    </div>
+
+
+    <div class="col">
+      
+      <div id="up">
+        <p>
+        I
+        </p>
+      </div>
+      <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
+
+    </div>
+
+
+    <div class="col-2  themed-grid-col">
+      <h5 class="card-header text-center"><%=@vsm.processC%></h5>
+      <div class="card-body">
+      <h4 class="card-title"></h4>
+      <p class="card-text"><strong><%=@vsm.resourceC%></strong></p>
+      <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
+      </div>
+    </div>
+
+
+    <div class="col">
+      
+      <div id="up">
+        <p>
+        I
+        </p>
+      </div>
+      <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
+
+    </div>
+
+
+    <div class="col-2  themed-grid-col">
+      <h5 class="card-header text-center"><%=@vsm.processD%></h5>
+      <div class="card-body text-center">
+      <h4 class="card-title"></h4>
+      <p class="card-text"><strong><%=@vsm.resourceD%></strong></p>
+      <p><img class="float-left" style="height:25px" style="width:25px" <%= image_tag "VSMlogo.png"%></p>
+      </div>
+    </div>
+
+  </div>
+
+
+<div class="row mb-3 text-center">
+
+    <div class="col-2 themed-grid-col text-center">
+      <div class="col-12  themed-grid-col" style="height:75px"><%=@vsm.dataA1%></div>
+      <div class="col"></div>
+      <div class="col-12 themed-grid-col" style="height:75px"><%=@vsm.dataA2%></div>
+      <div class="col"></div>
+      <div class="col-12  themed-grid-col" style="height:75px"><%=@vsm.dataA3%></div>
+    </div>
+
+
+    <div class="col"></div>
+
+
+    <div class="col-2 themed-grid-col text-center">
+      <div class="col-12  themed-grid-col" style="height:75px"><%=@vsm.dataB1%></div>
+      <div class="col"></div>
+      <div class="col-12 themed-grid-col" style="height:75px"><%=@vsm.dataB2%></div>
+      <div class="col"></div>
+      <div class="col-12  themed-grid-col" style="height:75px"><%=@vsm.dataB3%></div>
+    </div>
+
+
+    <div class="col"></div>
+
+
+    <div class="col-2 themed-grid-col text-center">
+      <div class="col-12  themed-grid-col" style="height:75px"><%=@vsm.dataC1%></div>
+      <div class="col"></div>
+      <div class="col-12 themed-grid-col" style="height:75px"><%=@vsm.dataC2%></div>
+      <div class="col"></div>
+      <div class="col-12  themed-grid-col" style="height:75px"><%=@vsm.dataC3%></div>
+    </div>
+
+
+    <div class="col"></div>
+
+
+    <div class="col-2 themed-grid-col text-center">
+      <div class="col-12  themed-grid-col" style="height:75px"><%=@vsm.dataD1%></div>
+      <div class="col"></div>
+      <div class="col-12 themed-grid-col" style="height:75px"><%=@vsm.dataD2%></div>
+      <div class="col"></div>
+      <div class="col-12  themed-grid-col" style="height:75px"><%=@vsm.dataD3%></div>
+    </div>
+
+</div>    
+<br><br>
+
+<!---------------------- Lead Time Ladder ----------------->
+
+<div class="NhorizontalLine"><%=@vsm.PLT1%></div>
+<div id="NverticalLine"></div>
+<div id="NverticalLine" style="left: 213px"></div>
+<div class="NhorizontalLine" style="left: 362px"><%=@vsm.PLT2%></div>
+<div id="NverticalLine" style="left: 362px"></div>
+<div id="NverticalLine" style="left: 511px"></div>
+<div id="NverticalLine" style="left: 660px"></div>
+<div class="NhorizontalLine" style="left: 660px"><%=@vsm.PLT3%></div>
+<div id="NverticalLine" style="left: 809px"></div>
+<div id="NverticalLine" style="left: 958px"></div>
+
+
+<span style="top: 1513px">
+<div class="col-2 themed-grid-col text-center" style="left:940px">
+      <h5 class="text-center">Lead Time Ladder</h5>
+      
+      <div class="col-12  themed-grid-col" style="height:67px">Production Lead Time = </div>
+      <div class="col"></div>
+      <div class="col-12 themed-grid-col" style="height:67px">Processing Time = </div>
+    
+</div>
+</span>
+<div class="NBhorizontalLine" style="left: 213px"><%=@vsm.PT1%></div>
+<div class="NBhorizontalLine" style="left: 512px"><%=@vsm.PT2%></div>
+<div class="NBhorizontalLine" style="left: 809px"><%=@vsm.PT3%></div>
+
+
+<div class="NSShorizontalLine" style="left: 958px"><%=@vsm.PLT4%></div>
+
+
+<br><br>
+
+<br><br><br><br><br><br><br><br>
+
+<!---------------------------------------------------------->
+
+<!------------------------ YOU ARE HERE ---------------------------------->
+
+<!------------------------------------- Toggle Option ------------------------------------------
+
+<div id="linezone">
+<div  style="width: 805px;height: 106px;top:50px;left:50px;">     
+            <div id="elem" onmousedown='mydragg.startMoving(this,"linezone",event);' onmouseup='mydragg.stopMoving("linezone");'>
+                <div id="vl"> </div>
+            </div>
+</div>  
+</div>
+
+<div class="float-right col-2 themed-grid-col text-center">
+      <div class="col-12  themed-grid-col" style="height:37px">Data 1</div>
+      <div class="col"></div>
+      <div class="col-12 themed-grid-col" style="height:37px">Data 2</div>
+    </div>
+
+---------------------------------------------------------------------------------------------------->
+
+
+
+
+
+</div> <!-- /container -->
+</body>
+</html>
