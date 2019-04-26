@@ -1,0 +1,17 @@
+<%= form_with(model: sipoc, local: true) do |form| %>
+  <% if sipoc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sipoc.errors.count, "error") %> prohibited this sipoc from being saved:</h2>
+
+      <ul>
+      <% sipoc.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

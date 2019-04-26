@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sipocs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sipocs.each do |sipoc| %>
+      <tr>
+        <td><%= link_to 'Show', sipoc %></td>
+        <td><%= link_to 'Edit', edit_sipoc_path(sipoc) %></td>
+        <td><%= link_to 'Destroy', sipoc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sipoc', new_sipoc_path %>

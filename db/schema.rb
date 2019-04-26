@@ -10,10 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_25_024223) do
+ActiveRecord::Schema.define(version: 2019_04_25_233851) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "sipocs", force: :cascade do |t|
+    t.string "file_name"
+    t.string "supplier1"
+    t.string "input1"
+    t.string "process_requirement1"
+    t.string "process1"
+    t.string "output1"
+    t.string "customer_requirement1"
+    t.string "customer1"
+    t.string "supplier2"
+    t.string "input2"
+    t.string "process_requirement2"
+    t.string "process2"
+    t.string "output2"
+    t.string "customer_requirement2"
+    t.string "customer2"
+    t.string "supplier3"
+    t.string "input3"
+    t.string "process_requirement3"
+    t.string "process3"
+    t.string "output3"
+    t.string "customer_requirement3"
+    t.string "customer3"
+    t.string "supplier4"
+    t.string "input4"
+    t.string "process_requirement4"
+    t.string "process4"
+    t.string "output4"
+    t.string "customer_requirement4"
+    t.string "customer4"
+    t.string "supplier5"
+    t.string "input5"
+    t.string "process_requirement5"
+    t.string "process5"
+    t.string "output5"
+    t.string "customer_requirement5"
+    t.string "customer5"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

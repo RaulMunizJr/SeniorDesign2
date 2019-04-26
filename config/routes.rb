@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :sipocs
   devise_for :users
   devise_scope :user do
 	authenticated :user do
