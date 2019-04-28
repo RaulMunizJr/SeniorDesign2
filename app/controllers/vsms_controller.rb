@@ -17,10 +17,24 @@ class VsmsController < ApplicationController
 		@vsm.user = User.find(1)
 
 		if @vsm.save
-			flash[:notice] = "Your VSM was created Successfully!"
+			flash[:notice] = "Your VSM has been saved to your profile!"
 			redirect_to dashboard_path
 		else
 			render:new
+		end
+	end
+
+	def edit
+		@vsm = Vsm.find(params[:id])
+	end
+
+	def update
+		@vsm = Vsm.find(params[:id])
+		if @vsm.update(vsm_params)
+			flash[:notice] = "Your VSM has been updated successfully!"
+			redirect_to vsm_path(@vsm)
+		else
+			render :edit
 		end
 	end
 

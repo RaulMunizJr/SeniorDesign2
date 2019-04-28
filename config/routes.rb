@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get '/vsms', to: 'vsms#index'
   get '/vsms/new', to: 'vsms#new', as: 'new_vsm'
   post '/vsms/', to: "vsms#create"
-  get '/vsms/:id/edit', to: "vsms#edit", as: 'edit_vsm'
+  get '/vsms/:id/edit', to: 'vsms#edit', as: 'edit_vsm'
   patch '/vsms/:id', to: 'vsms#update' #submission
   get'/vsms/:id', to: 'vsms#show', as: 'show_vsm' #display
   delete '/vsms/:id', to: 'vsms#destroy'
