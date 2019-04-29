@@ -7,11 +7,17 @@ Rails.application.routes.draw do
   get 'home/index'
   root 'home#index'
 
-  get '/dashboard', to: "dashboard#index"
 
+  get '/dashboard', to: "dashboard#index"
   get :tool1, to: "dashboard#tool1"
   get :tool2, to: "dashboard#tool2"
   get :nothing, to: "dashboard#nothing"
+
+
+  get '/sipocs', to: 'sipocs#index'
+  get '/sipocs/new', to: 'sipocs#new'
+  post '/sipocs', to: 'sipocs#create'
+
 
   get '/vsms', to: 'vsms#index'
   get '/vsms/new', to: 'vsms#new', as: 'new_vsm'
@@ -20,6 +26,7 @@ Rails.application.routes.draw do
   patch '/vsms/:id', to: 'vsms#update' #submission
   get'/vsms/:id', to: 'vsms#show', as: 'show_vsm' #display
   delete '/vsms/:id', to: 'vsms#destroy'
+
 
   get '/profile', to: "profile#index"
 

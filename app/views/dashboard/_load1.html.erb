@@ -36,7 +36,7 @@
 <body class="py-4">
 <div class="container">
 
-  <h1>SIPOC</h1>
+  <h1><center>SIPOC</center></h1>
   <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
   <p>In these examples the <code>.themed-grid-col</code> class is added to the columns to add some theming. This is not a class that is available in Bootstrap by default.</p>
 
@@ -58,151 +58,75 @@
 
         <div class="row mb-5">
           <tr>
-            <div class="col text-center mr-2 themed-grid-col bg-light text-white"><img style="height:75px" style="width:75px" <%= image_tag "supplier.png"%></div>
-            <div class="col text-center mr-2 themed-grid-col bg-warning text-white"><img style="height:75px" style="width:75px" <%= image_tag "input.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-primary text-white"><img style="height:75px" style="width:75px" <%= image_tag "supplier.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-danger text-white"><img style="height:75px" style="width:75px" <%= image_tag "input.png"%></div>
             <div class="col text-center mr-2 themed-grid-col bg-light text-white"><img style="height:75px" style="width:75px" <%= image_tag "pros_cust.png"%></div>
             <div class="col text-center mr-2 themed-grid-col bg-secondary text-white"><img style="height:75px" style="width:75px" <%= image_tag "process.png"%></div>
             <div class="col text-center mr-2 themed-grid-col bg-success text-white"><img style="height:75px" style="width:75px" <%= image_tag "output.png"%></div>
             <div class="col text-center mr-2 themed-grid-col bg-light text-white"><img style="height:75px" style="width:75px" <%= image_tag "pros_cust.png"%></div>
             <div class="col
-             text-center themed-grid-col bg-info text-white"><center><img style="height:75px" style="width:75px" <%= image_tag "customer.png"%></center></div>
+             text-center themed-grid-col bg-warning text-white"><center><img style="height:75px" style="width:75px" <%= image_tag "customer.png"%></center></div>
           </tr>
         </div>
 
         <div class="row mb-3">
-            <div class="col mr-2 themed-grid-col">
-              <input type="supplier" class="form-control" id="exampleSupplier1" aria-describedby="supplierHelp" placeholder="Enter Supplier">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="input" class="form-control" id="exampleInput1" aria-describedby="inputHelp" placeholder="Enter Input">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="process" class="form-control" id="exampleProcess1" aria-describedby="processHelp" placeholder="Enter Process">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="output" class="form-control" id="exampleOutput1" aria-describedby="outputHelp" placeholder="Enter Output">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
-            <div class="col themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-primary"><center>Supplier 1</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-danger"><center>Input 1</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold"><center>Process Requirement 1</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-secondary"><center>Process 1</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-success"><center>Output 1</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold"><center>Customer Requirement 1</center></div>
+            <div class="col themed-grid-col font-weight-bold text-warning"><center>Customer 1</center></div>
         </div>
 
         <div class="row mb-3">
-            <div class="col mr-2 themed-grid-col">
-              <input type="supplier" class="form-control" id="exampleSupplier1" aria-describedby="supplierHelp" placeholder="Enter Supplier">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="input" class="form-control" id="exampleInput1" aria-describedby="inputHelp" placeholder="Enter Input">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="process" class="form-control" id="exampleProcess1" aria-describedby="processHelp" placeholder="Enter Process">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="output" class="form-control" id="exampleOutput1" aria-describedby="outputHelp" placeholder="Enter Output">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
-            <div class="col themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-primary"><center>Supplier 2</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-danger"><center>Input 2</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold"><center>Process Requirement 2</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-secondary"><center>Process 2</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-success"><center>Output 2</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold"><center>Customer Requirement 2</center></div>
+            <div class="col themed-grid-col font-weight-bold text-warning"><center>Customer 2</center></div>
         </div>
 
         <div class="row mb-3">
-            <div class="col mr-2 themed-grid-col">
-              <input type="supplier" class="form-control" id="exampleSupplier1" aria-describedby="supplierHelp" placeholder="Enter Supplier">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="input" class="form-control" id="exampleInput1" aria-describedby="inputHelp" placeholder="Enter Input">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="process" class="form-control" id="exampleProcess1" aria-describedby="processHelp" placeholder="Enter Process">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="output" class="form-control" id="exampleOutput1" aria-describedby="outputHelp" placeholder="Enter Output">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
-            <div class="col themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-primary"><center>Supplier 3</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-danger"><center>Input 3</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold"><center>Process Requirement 3</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-secondary"><center>Process 3</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-success"><center>Output 3</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold"><center>Customer Requirement 3</center></div>
+            <div class="col themed-grid-col font-weight-bold text-warning"><center>Customer 3</center></div>
         </div>
 
         <div class="row mb-3">
-            <div class="col mr-2 themed-grid-col">
-              <input type="supplier" class="form-control" id="exampleSupplier1" aria-describedby="supplierHelp" placeholder="Enter Supplier">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="input" class="form-control" id="exampleInput1" aria-describedby="inputHelp" placeholder="Enter Input">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="process" class="form-control" id="exampleProcess1" aria-describedby="processHelp" placeholder="Enter Process">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="output" class="form-control" id="exampleOutput1" aria-describedby="outputHelp" placeholder="Enter Output">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
-            <div class="col themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-primary"><center>Supplier 4</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-danger"><center>Input 4</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold"><center>Process Requirement 4</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-secondary"><center>Process 4</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-success"><center>Output 4</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold"><center>Customer Requirement 4</center></div>
+            <div class="col themed-grid-col font-weight-bold text-warning"><center>Customer 4</center></div>
         </div>
 
         <div class="row mb-3">
-            <div class="col mr-2 themed-grid-col">
-              <input type="supplier" class="form-control" id="exampleSupplier1" aria-describedby="supplierHelp" placeholder="Enter Supplier">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="input" class="form-control" id="exampleInput1" aria-describedby="inputHelp" placeholder="Enter Input">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="process" class="form-control" id="exampleProcess1" aria-describedby="processHelp" placeholder="Enter Process">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="output" class="form-control" id="exampleOutput1" aria-describedby="outputHelp" placeholder="Enter Output">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
-            <div class="col mr-2 themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
-            <div class="col themed-grid-col">
-              <input type="customer" class="form-control" id="exampleCustomer1" aria-describedby="customerHelp" placeholder="Enter Customer">
-            </div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-primary"><center>Supplier 5</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-danger"><center>Input 5</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold"><center>Process Requirement 5</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-secondary"><center>Process 5</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold text-success"><center>Output 5</center></div>
+            <div class="col mr-2 themed-grid-col font-weight-bold"><center>Customer Requirement 5</center></div>
+            <div class="col themed-grid-col font-weight-bold text-warning"><center>Customer 5</center></div>
         </div>
       </div>
     </div>
 
     <br>
     <center>
-    <div class='is-grouped'>
-      <button class='button mr-5'>Open</button>
-      <button class='button mr-5'>Save As...</button>
-      <button class='button'>Clear</button>
-    </div>
+    <a href="sipocs/new" class="text-white"><button class="btn btn-primary btn-md">New</button></a>
     </center>
     
 
 </div> <!-- /container -->
 </body>
 </html>
-
-<%= link_to "Load Part 2", tool2_path %>
