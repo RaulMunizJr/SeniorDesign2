@@ -38990,7 +38990,6 @@ Processing by ProfileController#index as HTML
 Completed 200 OK in 374ms (Views: 344.5ms | ActiveRecord: 12.4ms)
 
 
-<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2019-04-29 20:21:32 -0500
   [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
@@ -40150,5 +40149,19 @@ Processing by DashboardController#index as HTML
 Completed 200 OK in 395ms (Views: 369.8ms | ActiveRecord: 0.0ms)
 
 
-=======
->>>>>>> 920280c49288de205eadbd871e979dc10f325c7b
+Started GET "/" for 127.0.0.1 at 2019-04-30 17:05:48 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1043ms (Views: 1013.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-30 17:06:02 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 225ms (Views: 193.6ms | ActiveRecord: 0.0ms)
+
+

@@ -17,13 +17,10 @@ Rails.application.routes.draw do
   get '/sipocs', to: 'sipocs#index'
   get '/sipocs/new', to: 'sipocs#new'
   post '/sipocs', to: 'sipocs#create'
-<<<<<<< HEAD
   get '/sipocs/:id/edit', to: 'sipocs#edit'
   patch '/sipocs/:id', to: 'sipocs#update' #submission
   get'/sipocs/:id', to: 'sipocs#show', as: 'show_sipoc' #display
   delete '/sipocs/:id', to: 'sipocs#destroy'
-=======
->>>>>>> 920280c49288de205eadbd871e979dc10f325c7b
 
 
   get '/vsms', to: 'vsms#index'
