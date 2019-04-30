@@ -43,12 +43,24 @@ class SipocsController < ApplicationController
   def update
     @sipoc = sipoc.find(params[:id])
 
+<<<<<<< HEAD
     if @sipoc.update(sipoc_params)
 			flash[:notice] = "Your SIPOC has been updated successfully!"
 			redirect_to sipoc_path(@sipoc)
 		else
 			render :edit
 		end
+=======
+    respond_to do |format|
+      if @sipoc.update(sipoc_params)
+        format.html { redirect_to @sipoc, notice: 'Sipoc was successfully updated.' }
+        format.json { render :show, status: :ok, location: @sipoc }
+      else
+        format.html { render :edit }
+        format.json { render json: @sipoc.errors, status: :unprocessable_entity }
+      end
+    end
+>>>>>>> 920280c49288de205eadbd871e979dc10f325c7b
   end
 
   # DELETE /sipocs/1
