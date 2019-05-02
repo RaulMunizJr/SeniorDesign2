@@ -38,6 +38,13 @@ class VsmsController < ApplicationController
 		end
 	end
 
+	def destroy
+		@vsm = Vsm.find(params[:id])
+  		@vsm.destroy
+  		flash[:alert] = "Your VSM has been deleted!"
+  		redirect_to profile_path
+	end
+
 	private 
 
 		def vsm_params

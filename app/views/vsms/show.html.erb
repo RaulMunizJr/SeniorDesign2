@@ -256,7 +256,15 @@
 
 <br><br>
 <center>
-<!--   <%= link_to "Edit VSM", edit_vsm_path(@vsm), class: "btn btn-success" %>   -->
+<%= link_to 'New VSM', new_vsm_path, class: "btn btn-primary" %>
+<div class="divider"></div>
+<%= link_to "Edit VSM", edit_vsm_path(@vsm), class: "btn btn-success" %>
+<div class="divider"></div>
+<%= link_to 'Delete', show_vsm_path(@vsm), 
+                                      method: :delete,
+                                      data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+
+
 </center>
 
 <br><br>
