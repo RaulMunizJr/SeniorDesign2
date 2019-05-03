@@ -51,7 +51,7 @@
 <br>
       <div class="row">
         <div class="col-2 text-center">          
-<%= form_for @vsm do |f| %>
+<%= form_for @vsm, :url => edit_vsm_path do |f| %>
             <%= f.text_field :file_name, :class=>"form-control",:placeholder=>"Enter Filename" %>
           </div>
         </div>
