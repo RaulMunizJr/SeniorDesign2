@@ -41889,3 +41889,2002 @@ Processing by DashboardController#index as HTML
 Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-05-02 19:07:32 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 19:07:32 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (375.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (381.0ms)
+Completed 200 OK in 494ms (Views: 490.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-05-02 19:07:48 -0500
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 19:07:48 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (12.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 60ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-05-02 19:08:04 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 19:08:04 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (10.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2019-05-02 19:08:06 -0500
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (0.9ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (0.7ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (160.0ms)
+Completed 200 OK in 226ms (Views: 201.2ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:08:07 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.5ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 108ms (Views: 100.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:10:11 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 78ms (Views: 72.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:12:23 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 70ms (Views: 63.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:13:23 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  Rendered vsms/show.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/RaulMuniz/Desktop/LeanMan/app/views/vsms/show.html.erb:255: syntax error, unexpected tLABEL, expecting '='
+...uffer.append=(@vsm.PLT4, style: float-right);@output_buffer....
+...                               ^):
+  
+app/views/vsms/show.html.erb:255: syntax error, unexpected tLABEL, expecting '='
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:14:07 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  Rendered vsms/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/RaulMuniz/Desktop/LeanMan/app/views/vsms/show.html.erb:255: syntax error, unexpected tLABEL, expecting '='
+...uffer.append=(@vsm.PLT4, style: "float-right");@output_buffe...
+...                               ^):
+  
+app/views/vsms/show.html.erb:255: syntax error, unexpected tLABEL, expecting '='
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:14:19 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 63ms (Views: 57.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:15:33 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 58ms (Views: 53.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:15:41 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 59ms (Views: 54.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:15:55 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 65ms (Views: 60.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:16:03 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 55ms (Views: 51.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:16:16 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 59ms (Views: 54.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:16:23 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 59ms (Views: 55.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:17:31 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (188.0ms)
+Completed 200 OK in 261ms (Views: 256.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:18:09 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 58ms (Views: 53.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:18:29 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 66ms (Views: 61.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:18:35 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:18:53 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 55ms (Views: 51.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 19:19:07 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-02 22:53:05 -0500
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 22:53:05 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (10.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2019-05-02 22:53:17 -0500
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (0.8ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (0.8ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 73ms (Views: 64.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 22:53:19 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (10.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nothing" for 127.0.0.1 at 2019-05-02 22:53:21 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#nothing as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 22:53:21 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_nothing.html.erb (0.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-05-02 22:53:38 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 22:53:38 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (13.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:15:28 -0500
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (135.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (142.6ms)
+Completed 200 OK in 204ms (Views: 201.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:15:45 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (10.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:15:55 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (12.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:16:06 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (12.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:16:47 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (12.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 71ms (Views: 67.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:17:03 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (10.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:17:13 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (12.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:17:28 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (12.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:17:38 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (13.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:18:03 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (13.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 62ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:18:59 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (11.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 58ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:19:40 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (13.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 61ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:20:23 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (10.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:21:55 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (12.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 59ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:22:12 -0500
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (12.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:22:29 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (10.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:22:57 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (10.2ms)
+  Rendered dashboard/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:23:03 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (13.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:23:22 -0500
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (11.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 58ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:23:32 -0500
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (11.2ms)
+  Rendered dashboard/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 62ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:24:06 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (11.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:24:34 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 87ms (Views: 83.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:26:22 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:26:37 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 63ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:28:07 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 94ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:28:22 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 93ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:28:51 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 87ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:28:53 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 58ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:29:10 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 86ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:29:25 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 82ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:29:27 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 56ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:29:34 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:30:19 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 95ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:30:31 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 89ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:30:39 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 88ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:30:58 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:31:09 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 107ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:31:17 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 80ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:31:23 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:31:31 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 86ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:31:40 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 90ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:32:10 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:32:57 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 77ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:33:09 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 85ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:33:17 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 83ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:33:32 -0500
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 84ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:33:49 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:34:04 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:34:13 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 71ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:34:25 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:34:33 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:34:42 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:34:50 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 70ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:34:58 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:35:47 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 58ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:35:53 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:36:06 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 60ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:36:17 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 67ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:36:48 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 95ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:37:05 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 66ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:37:17 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:37:37 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 93ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:37:51 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:38:06 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 95ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:39:02 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 103ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:39:11 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 106ms (Views: 103.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:39:21 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:40:07 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 88ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:40:29 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 116ms (Views: 113.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:40:49 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 80ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:40:54 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:41:17 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 83ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:41:56 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 58ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:42:06 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 66ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:43:14 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 58ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:43:53 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:43:59 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 64ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:44:08 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 58ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:44:32 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:44:55 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 83ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:45:02 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:45:10 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:45:22 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 91ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:45:33 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 106ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:46:01 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 65ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:46:08 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 60ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:46:18 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:46:25 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 57ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:46:44 -0500
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (11.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:46:53 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 67ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:47:35 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 65ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:47:42 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:47:47 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:47:56 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (13.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vsms/new" for 127.0.0.1 at 2019-05-02 23:48:05 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#new as HTML
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/vsms" for 127.0.0.1 at 2019-05-02 23:48:11 -0500
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mHJ/FQEcjl0qXV0Lby+uib7TJgc+JZURlF+y+qO55lc4U/sB/CtC182cqYNk+Hi/pI4tc1w7dzLSjGAOdrxlFQ==", "vsm"=>{"file_name"=>"", "inventory1"=>"", "inventory2"=>"", "inventory3"=>"", "inventory4"=>"", "processA"=>"", "resourceA"=>"", "processB"=>"", "resourceB"=>"", "processC"=>"", "resourceC"=>"", "processD"=>"", "resourceD"=>"", "dataA1"=>"", "dataA2"=>"", "dataA3"=>"", "dataB1"=>"", "dataB2"=>"", "dataB3"=>"", "dataC1"=>"", "dataC2"=>"", "dataC3"=>"", "dataD1"=>"", "dataD2"=>"", "dataD3"=>"", "PLT1"=>"", "PLT2"=>"", "PLT3"=>"", "PLT4"=>"", "PT1"=>"", "PT2"=>"", "PT3"=>""}, "commit"=>"Create VSM"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:17
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/vsms_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/vsms_controller.rb:19
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 115ms (Views: 78.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/vsms" for 127.0.0.1 at 2019-05-02 23:48:14 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v/NUD3My0cF09q3L9DpDmRADb1JHWFGmHbOtQRaHZqof0tAbjgUdS5M3WUP/7ZWvCl5kJiVGs4VbYH+1w4Ll6A==", "vsm"=>{"file_name"=>"", "inventory1"=>"", "inventory2"=>"", "inventory3"=>"", "inventory4"=>"", "processA"=>"", "resourceA"=>"", "processB"=>"", "resourceB"=>"", "processC"=>"", "resourceC"=>"", "processD"=>"", "resourceD"=>"", "dataA1"=>"", "dataA2"=>"", "dataA3"=>"", "dataB1"=>"", "dataB2"=>"", "dataB3"=>"", "dataC1"=>"", "dataC2"=>"", "dataC3"=>"", "dataD1"=>"", "dataD2"=>"", "dataD3"=>"", "PLT1"=>"", "PLT2"=>"", "PLT3"=>"", "PLT4"=>"", "PT1"=>"", "PT2"=>"", "PT3"=>""}, "commit"=>"Create VSM"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/vsms_controller.rb:19
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/vsms_controller.rb:19
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 96ms (Views: 64.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/vsms" for 127.0.0.1 at 2019-05-02 23:48:19 -0500
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oDXmOGwAMLJfx1CvtH3mICqhT9b7rCBg7XZAjkN8wSYAFGIskTf8OLgGpCe/qjAWMPxEopmywkOrpZJ6lnlCZA==", "vsm"=>{"file_name"=>"MyVSM", "inventory1"=>"", "inventory2"=>"", "inventory3"=>"", "inventory4"=>"", "processA"=>"", "resourceA"=>"", "processB"=>"", "resourceB"=>"", "processC"=>"", "resourceC"=>"", "processD"=>"", "resourceD"=>"", "dataA1"=>"", "dataA2"=>"", "dataA3"=>"", "dataB1"=>"", "dataB2"=>"", "dataB3"=>"", "dataC1"=>"", "dataC2"=>"", "dataC3"=>"", "dataD1"=>"", "dataD2"=>"", "dataD3"=>"", "PLT1"=>"", "PLT2"=>"", "PLT3"=>"", "PLT4"=>"", "PT1"=>"", "PT2"=>"", "PT3"=>""}, "commit"=>"Create VSM"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/vsms_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/vsms_controller.rb:19
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 97ms (Views: 65.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/vsms" for 127.0.0.1 at 2019-05-02 23:48:27 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z9+klWFo/O+eargOGiLeWRIy1+HbHAu567w1uWKKN4bH/iCBnF8wZXmrTIYR9QhvCG/clbkC6Zqtb+dNt4+0xA==", "vsm"=>{"file_name"=>"SVM", "inventory1"=>"", "inventory2"=>"", "inventory3"=>"", "inventory4"=>"", "processA"=>"", "resourceA"=>"", "processB"=>"", "resourceB"=>"", "processC"=>"", "resourceC"=>"", "processD"=>"", "resourceD"=>"", "dataA1"=>"", "dataA2"=>"", "dataA3"=>"", "dataB1"=>"", "dataB2"=>"", "dataB3"=>"", "dataC1"=>"", "dataC2"=>"", "dataC3"=>"", "dataD1"=>"", "dataD2"=>"", "dataD3"=>"", "PLT1"=>"", "PLT2"=>"", "PLT3"=>"", "PLT4"=>"", "PT1"=>"", "PT2"=>"", "PT3"=>""}, "commit"=>"Create VSM"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/vsms_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/vsms_controller.rb:19
+  Rendering vsms/new.html.erb within layouts/application
+  Rendered vsms/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 104ms (Views: 71.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-02 23:48:30 -0500
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (11.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 63ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2019-05-02 23:48:32 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (1.1ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (0.9ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 61ms (Views: 52.6ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 23:48:34 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 60ms (Views: 54.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 23:48:47 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 69ms (Views: 64.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 23:49:43 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 74ms (Views: 69.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 23:49:52 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 62ms (Views: 57.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-02 23:50:22 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.5ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 62ms (Views: 56.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-02 23:50:57 -0500
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.5ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 65ms (Views: 59.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/vsms/1/edit" for 127.0.0.1 at 2019-05-02 23:51:03 -0500
+  
+ActionController::RoutingError (No route matches [PATCH] "/vsms/1/edit"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started PATCH "/vsms/1/edit" for 127.0.0.1 at 2019-05-02 23:53:53 -0500
+  
+ActionController::RoutingError (No route matches [PATCH] "/vsms/1/edit"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started PATCH "/vsms/1/edit" for 127.0.0.1 at 2019-05-02 23:54:35 -0500
+  
+ActionController::RoutingError (No route matches [PATCH] "/vsms/1/edit"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-02 23:59:26 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 91ms (Views: 86.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-02 23:59:34 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 84ms (Views: 79.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-02 23:59:42 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 94ms (Views: 90.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:01:39 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 63ms (Views: 58.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:01:48 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 61ms (Views: 56.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:02:23 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 64ms (Views: 59.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:02:31 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 65ms (Views: 60.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:02:42 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 74ms (Views: 69.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:03:05 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.6ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 69ms (Views: 64.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:03:46 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 64ms (Views: 60.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:04:02 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.5ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 60ms (Views: 55.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:05:03 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.6ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 88ms (Views: 81.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:05:27 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 61ms (Views: 56.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:16:30 -0500
+  
+ActionController::RoutingError (No route matches [PATCH] "/vsms/1/edit"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:16:57 -0500
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.6ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (34.5ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (Missing partial vsms/_form.html.erb, application/_form.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/RaulMuniz/Desktop/LeanMan/app/views"
+  * "/Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/devise-4.6.2/app/views"
+):
+    309: <div class="NSShorizontalLine" style="left: 958px"></div>
+    310: <br><br>
+    311: <center>
+    312: <%= render "form.html.erb", submit_text: "Edit VSM!" %>
+    313: </center>
+    314: 
+    315: <br><br><br><br><br><br><br><br><br><br>
+  
+app/views/vsms/edit.html.erb:312:in `block in _app_views_vsms_edit_html_erb__1844813487529816847_70347405488600'
+app/views/vsms/edit.html.erb:54:in `_app_views_vsms_edit_html_erb__1844813487529816847_70347405488600'
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:18:48 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 65ms (Views: 60.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:18:50 -0500
+  
+ActionController::RoutingError (No route matches [PATCH] "/vsms/1/edit"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:23:22 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.7ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 75ms (Views: 69.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 00:23:26 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (13.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 64ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2019-05-03 00:23:31 -0500
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (0.9ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 56ms (Views: 48.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-03 00:23:32 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 89ms (Views: 84.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:23:34 -0500
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.7ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 88ms (Views: 83.3ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:24:02 -0500
+  
+ActionController::RoutingError (No route matches [PATCH] "/vsms/1/edit"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-03 00:25:19 -0500
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 124ms (Views: 62.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:25:21 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/vsms/1" for 127.0.0.1 at 2019-05-03 00:25:37 -0500
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KPhqu46x4cTHMA97oSwXgjxCzvF6GSM6QqZQoNvwZh0gmW+Ew0LDfTdNLXlU2ZoEqwAT6f2hq+v2Uu2VmpC2g==", "vsm"=>{"file_name"=>"MyVSM", "inventory1"=>"1783", "inventory2"=>"1683", "inventory3"=>"1583", "inventory4"=>"1483", "processA"=>"Prep ingredients", "resourceA"=>"ing 1, ing 2, etc.", "processB"=>"Label Containers", "resourceB"=>"By delivery location", "processC"=>"Place & Load", "resourceC"=>"Place product by location and load food into bags", "processD"=>"Shipping", "resourceD"=>"Saturdays!", "dataA1"=>"total cycle: 120 min", "dataA2"=>"NVA: 80 min", "dataA3"=>"C/O: 23 min", "dataB1"=>"total cycle: 30 seconds", "dataB2"=>"NVA: 30 seconds", "dataB3"=>"C/O: 10 min", "dataC1"=>"total cycle: 210 seconds", "dataC2"=>"NVA: 210 seconds", "dataC3"=>"C/O: 30 min", "dataD1"=>"Truck leave by 9AM", "dataD2"=>"N/A", "dataD3"=>"N/A", "PLT1"=>"360", "PLT2"=>"120", "PLT3"=>"90", "PLT4"=>"220", "PT1"=>"40", "PT2"=>"33", "PT3"=>"50"}, "commit"=>"Edit VSM", "id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/vsms_controller.rb:33
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:33
+  [1m[36mVsm Update (0.9ms)[0m  [1m[33mUPDATE "vsms" SET "resourceD" = $1, "updated_at" = $2 WHERE "vsms"."id" = $3[0m  [["resourceD", "Saturdays!"], ["updated_at", "2019-05-03 05:25:37.899908"], ["id", 1]]
+  ↳ app/controllers/vsms_controller.rb:33
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/vsms_controller.rb:33
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 3.9ms)
+
+
+  
+NoMethodError (undefined method `vsm_path' for #<VsmsController:0x007ff6103be3a0>):
+  
+app/controllers/vsms_controller.rb:35:in `update'
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 00:26:05 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 152ms (Views: 84.9ms | ActiveRecord: 4.2ms)
+
+
+Started PATCH "/vsms/1" for 127.0.0.1 at 2019-05-03 00:26:08 -0500
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2ckaXD6nd3UswB+Ke108dr2hvgdvOgkmx7ML7v18r9d56J5Iw5C7/8sB6wJwiupAp/y1cw0k6wWBYNkaKHkslQ==", "vsm"=>{"file_name"=>"MyVSM", "inventory1"=>"1783", "inventory2"=>"1683", "inventory3"=>"1583", "inventory4"=>"1483", "processA"=>"Prep ingredients", "resourceA"=>"ing 1, ing 2, etc.", "processB"=>"Label Containers", "resourceB"=>"By delivery location", "processC"=>"Place & Load", "resourceC"=>"Place product by location and load food into bags", "processD"=>"Shipping", "resourceD"=>"Saturdays!", "dataA1"=>"total cycle: 120 min", "dataA2"=>"NVA: 80 min", "dataA3"=>"C/O: 23 min", "dataB1"=>"total cycle: 30 seconds", "dataB2"=>"NVA: 30 seconds", "dataB3"=>"C/O: 10 min", "dataC1"=>"total cycle: 210 seconds", "dataC2"=>"NVA: 210 seconds", "dataC3"=>"C/O: 30 min", "dataD1"=>"Truck leave by 9AM", "dataD2"=>"N/A", "dataD3"=>"N/A", "PLT1"=>"360", "PLT2"=>"120", "PLT3"=>"90", "PLT4"=>"220", "PT1"=>"40", "PT2"=>"33", "PT3"=>"50"}, "commit"=>"Edit VSM", "id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/vsms_controller.rb:33
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/vsms_controller.rb:33
+Redirected to http://localhost:3000/profile.1
+Completed 302 Found in 17ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/profile.1" for 127.0.0.1 at 2019-05-03 00:26:08 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as 
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (0.8ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (0.4ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (102.7ms)
+Completed 200 OK in 215ms (Views: 165.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-03 00:26:11 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.3ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 59ms (Views: 54.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-03 00:26:50 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 00:26:50 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/RaulMuniz/.rvm/gems/ruby-2.2.6/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (16.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 65ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+

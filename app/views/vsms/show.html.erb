@@ -59,6 +59,8 @@
         </div>
         
 <br>
+<img class="float-left" style="height:130px" style="width:70px" <%= image_tag "LeftDownArrow.png"%>
+<img class="float-right" style="height:130px" style="width:70px" <%= image_tag "UpLeftArrow.png"%>
   <div class="row mb-3 text-center">
     <div class="col"></div>
     <div class="col-4 themed-grid-col"><h5 class="card-header text-center">Production Control</h5></div>
@@ -225,14 +227,14 @@
 
 <!---------------------- Lead Time Ladder ----------------->
 
-<div class="NhorizontalLine"><%=@vsm.PLT1%></div>
+<div class="NhorizontalLine"><div class="divider1"></div><%=@vsm.PLT1%></div>
 <div id="NverticalLine"></div>
 <div id="NverticalLine" style="left: 213px"></div>
-<div class="NhorizontalLine" style="left: 362px"><%=@vsm.PLT2%></div>
+<div class="NhorizontalLine" style="left: 362px"><div class="divider1"></div><%=@vsm.PLT2%></div>
 <div id="NverticalLine" style="left: 362px"></div>
 <div id="NverticalLine" style="left: 511px"></div>
 <div id="NverticalLine" style="left: 660px"></div>
-<div class="NhorizontalLine" style="left: 660px"><%=@vsm.PLT3%></div>
+<div class="NhorizontalLine" style="left: 660px"><div class="divider1"></div><%=@vsm.PLT3%></div>
 <div id="NverticalLine" style="left: 809px"></div>
 <div id="NverticalLine" style="left: 958px"></div>
 
@@ -241,9 +243,9 @@
 <div class="col-2 themed-grid-col text-center" style="left:940px">
       <h5 class="text-center">Lead Time Ladder</h5>
       
-      <div class="col-12  themed-grid-col" style="height:67px">Production Lead Time = </div>
+      <div class="col-12  themed-grid-col" style="height:67px">Production Lead Time = <%= @vsm.PLT1 + @vsm.PLT2 + @vsm.PLT3 + @vsm.PLT4 %></div>
       <div class="col"></div>
-      <div class="col-12 themed-grid-col" style="height:67px">Processing Time = </div>
+      <div class="col-12 themed-grid-col" style="height:67px">Processing Time = <%= @vsm.PT1 + @vsm.PT2 + @vsm.PT3 %></div>
     
 </div>
 </span>
@@ -252,7 +254,7 @@
 <div class="NBhorizontalLine" style="left: 809px"><%=@vsm.PT3%></div>
 
 
-<div class="NSShorizontalLine" style="left: 958px"><%=@vsm.PLT4%></div>
+<div class="NSShorizontalLine" style="left: 958px"><div class="divider1"></div><%=@vsm.PLT4%></div>
 
 <br><br>
 <center>
@@ -263,6 +265,7 @@
 <%= link_to 'Delete', show_vsm_path(@vsm), 
                                       method: :delete,
                                       data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+<!--<#%= link_to "Delete this VSM", "/vsms/#{@vsm.id}", method: :delete %>-->
 
 
 </center>

@@ -153,7 +153,7 @@
   padding: 40px 0px 0px 0px;
   position: absolute;
   left:64px;
-  top:1574px;
+  top:1624px;
 }
 
 .NhorizontalLine {
@@ -162,7 +162,7 @@
         height: 5px;
         position: absolute;
         left:64px;
-        top:1570px;
+        top:1620px;
 }
 
 .NBhorizontalLine {
@@ -172,7 +172,7 @@
      height: 5px;
      position: absolute;
      left:209px;
-     top:1613px;
+     top:1663px;
      
 
 }
@@ -202,7 +202,7 @@
         height: 5px;
         position: absolute;
         left:64px;
-        top:1570px;
+        top:1620px;
 }
 
 .divider{
@@ -210,6 +210,37 @@
     height:auto;
     display:inline-block;
 }
+
+.divider1{
+    width:12px;
+    height:auto;
+    display:inline-block;
+}
+
+.divider2{
+    width:104px;
+    height:auto;
+    display:inline-block;
+}
+
+.divider3{
+    width:122px;
+    height:auto;
+    display:inline-block;
+}
+
+.divider4{
+    width:138px;
+    height:auto;
+    display:inline-block;
+}
+
+.divider5{
+    width:147px;
+    height:auto;
+    display:inline-block;
+}
+
 
 
 

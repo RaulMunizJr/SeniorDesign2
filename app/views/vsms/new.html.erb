@@ -57,6 +57,8 @@
         </div>
         
 <br>
+<img class="float-left" style="height:130px" style="width:70px" <%= image_tag "LeftDownArrow.png"%>
+<img class="float-right" style="height:130px" style="width:70px" <%= image_tag "UpLeftArrow.png"%>
   <div class="row mb-3 text-center">
     <div class="col"></div>
     <div class="col-4 themed-grid-col"><h5 class="card-header text-center">Production Control</h5></div>
@@ -99,12 +101,15 @@
 <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
 <div class="form-inline">
   <div class="form-group">
+    <div class="divider5"></div>
   <%= f.number_field :inventory2, :class=>"form-control col-6 ml-1" %>
 </div>
 <div class="form-group">
+  <div class="divider3"></div>
   <%= f.number_field :inventory3, :class=>"form-control col-6 ml-1" %>
 </div>
 <div class="form-group">
+  <div class="divider3"></div>
   <%= f.number_field :inventory4, :class=>"form-control col-6 ml-1" %>
 </div>
 </div>
@@ -257,15 +262,19 @@
 
 <div class="form-inline">
   <div class="form-group">
+    <div class="divider1"></div>
     <%= f.number_field :PLT1, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
   <div class="form-group">
+    <div class="divider2"></div>
     <%= f.number_field :PLT2, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
   <div class="form-group">
+    <div class="divider3"></div>
     <%= f.number_field :PLT3, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
   <div class="form-group">
+    <div class="divider1"></div><div class="divider1"></div><div class="divider1"></div><div class="divider1"></div><div class="divider1"></div><div class="divider1"></div>
     <%= f.number_field :PLT4, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
 </div>
@@ -284,12 +293,15 @@
 
 <div class="form-inline">
   <div class="form-group">
+    <div class="divider3"></div>
     <%= f.number_field :PT1, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
   <div class="form-group">
+    <div class="divider4"></div>
     <%= f.number_field :PT2, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
   <div class="form-group">
+    <div class="divider3"></div>
     <%= f.number_field :PT3, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
 </div>
@@ -300,6 +312,7 @@
 
 
 <div class="NSShorizontalLine" style="left: 958px"></div>
+<br><br>
 <center>
 <%= f.submit 'Create VSM', class: "btn btn-success"%>
 </center>

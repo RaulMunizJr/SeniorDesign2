@@ -51,7 +51,7 @@
 <br>
       <div class="row">
         <div class="col-2 text-center">          
-<%= form_for @vsm, :url => edit_vsm_path do |f| %>
+<%= form_for @vsm, :url => update_vsm_path do |f| %>
             <%= f.text_field :file_name, :class=>"form-control",:placeholder=>"Enter Filename" %>
           </div>
         </div>
@@ -257,15 +257,19 @@
 
 <div class="form-inline">
   <div class="form-group">
+    <div class="divider1"></div>
     <%= f.number_field :PLT1, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
   <div class="form-group">
+    <div class="divider2"></div>
     <%= f.number_field :PLT2, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
   <div class="form-group">
+    <div class="divider3"></div>
     <%= f.number_field :PLT3, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
   <div class="form-group">
+    <div class="divider1"></div><div class="divider1"></div><div class="divider1"></div><div class="divider1"></div><div class="divider1"></div><div class="divider1"></div>
     <%= f.number_field :PLT4, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
 </div>
@@ -284,12 +288,15 @@
 
 <div class="form-inline">
   <div class="form-group">
+    <div class="divider3"></div>
     <%= f.number_field :PT1, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
   <div class="form-group">
+    <div class="divider4"></div>
     <%= f.number_field :PT2, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
   <div class="form-group">
+    <div class="divider3"></div>
     <%= f.number_field :PT3, :class=>"form-control form-control-sm col-6 ml-1 " %>
   </div>
 </div>
@@ -300,6 +307,7 @@
 
 
 <div class="NSShorizontalLine" style="left: 958px"></div>
+<br><br>
 <center>
 <%= f.submit 'Edit VSM', class: "btn btn-success"%>
 </center>

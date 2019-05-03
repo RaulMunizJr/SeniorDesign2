@@ -32,7 +32,7 @@ class VsmsController < ApplicationController
 		@vsm = Vsm.find(params[:id])
 		if @vsm.update(vsm_params)
 			flash[:notice] = "Your VSM has been updated successfully!"
-			redirect_to vsm_path(@vsm)
+			redirect_to profile_path(@vsm)
 		else
 			render :edit
 		end
