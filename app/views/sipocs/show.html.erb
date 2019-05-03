@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Grid Template ยท Bootstrap</title>
+    <title>SIPOC</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/grid/">
 
@@ -42,17 +42,11 @@
     <link href="https://getbootstrap.com/docs/4.3/examples/grid/grid.css" rel="stylesheet">
   </head>
   
-<body class="py-4">
+<body class="py-4" id="background">
 <div class="container">
 
-  <h1><center>SIPOC</center></h1>
-  <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
-  <p>In these examples the <code>.themed-grid-col</code> class is added to the columns to add some theming. This is not a class that is available in Bootstrap by default.</p>
 
-  <h2 class="mt-4">Five grid tiers</h2>
-  <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
-
-    <div class="row">
+  <div class="row">
         <div class="col text-center">
           <h1>SIPOC</h1>
             <p class="lead"><%=@sipoc.file_name%></p>
@@ -60,6 +54,7 @@
             
           </div>
         </div>
+<br><hr/><br>
     <!-- TITLE FOR EACH OF THE TOOLS -->
     <div class="row">
       <div class="col-12">
@@ -136,16 +131,20 @@
             <div class="col themed-grid-col font-weight-bold text-warning"><center><%=@sipoc.customer5%></center></div>
         </div>
       </div>
-    </div>
+    </div> 
+<br><br>
     <center>
-    <%= link_to 'New SIPOC', new_sipoc_path, class: "btn btn-primary" %>
-    <div class="divider"></div>
-    <%= link_to "Edit SIPOC", edit_sipoc_path(@sipoc), class: "btn btn-success" %>
-    <div class="divider"></div>
-    <%= link_to 'Delete', show_sipoc_path(@sipoc), 
-                                          method: :delete,
-                                          data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
-    </center>    
+<%= link_to 'New SIPOC', new_sipoc_path, class: "btn btn-primary" %>
+<div class="divider"></div>
+<%= link_to "Edit SIPOC", edit_sipoc_path(@sipoc), class: "btn btn-success" %>
+<div class="divider"></div>
+<%= link_to 'Delete', show_sipoc_path(@sipoc), 
+                                      method: :delete,
+                                      data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+<!--<#%= link_to "Delete this VSM", "/vsms/#{@vsm.id}", method: :delete %>-->
+
+<br><br><br><br>
+</center>   
 
 </div> <!-- /container -->
 </body>

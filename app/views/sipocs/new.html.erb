@@ -41,7 +41,7 @@
     <link href="https://getbootstrap.com/docs/4.3/examples/grid/grid.css" rel="stylesheet">
   </head>
   
-<body class="py-4">
+<body class="py-4" id="background">
 <nav class="site-header sticky-top py-1">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2" href="/dashboard">
@@ -52,12 +52,8 @@
 <div class="container">
 
   <%= form_for @sipoc do |f| %>
-  <h1>SIPOC</h1>
-  <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
-  <p>In these examples the <code>.themed-grid-col</code> class is added to the columns to add some theming. This is not a class that is available in Bootstrap by default.</p>
-
-  <h2 class="mt-4">Five grid tiers</h2>
-  <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
+  <h1 class="text-center">SIPOC</h1>
+  <br><br>
 
     <!-- TITLE FOR EACH OF THE TOOLS -->
     <div class="row">
@@ -219,6 +215,7 @@
     </center>
     
 <%end%>
+<br><br><br><br>
 </div> <!-- /container -->
 </body>
 </html>
