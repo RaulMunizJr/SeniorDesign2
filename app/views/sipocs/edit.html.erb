@@ -1,6 +1,216 @@
-<h1>Editing Sipoc</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Grid Template ยท Bootstrap</title>
 
-<%= render 'form', sipoc: @sipoc %>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/grid/">
 
-<%= link_to 'Show', @sipoc %> |
-<%= link_to 'Back', sipocs_path %>
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.3/examples/grid/grid.css" rel="stylesheet">
+  </head>
+  
+<body class="py-4">
+<nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="/dashboard">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Back to Dashboard</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+        </a>
+      </div>
+    </nav>
+<div class="container">
+
+  <%= form_for @sipoc, :url => update_sipoc_path do |f| %>
+  <h1>SIPOC</h1>
+  <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+  <p>In these examples the <code>.themed-grid-col</code> class is added to the columns to add some theming. This is not a class that is available in Bootstrap by default.</p>
+
+  <h2 class="mt-4">Five grid tiers</h2>
+  <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
+
+    <!-- TITLE FOR EACH OF THE TOOLS -->
+    <div class="row">
+      <div class="col-12">
+        <div class="row mb-3">
+          <div class="col font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>S</h3></div>
+          <div class="col font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>I</h3></div>
+          <div class="col  font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>Process Req.</h3></div>
+          <div class="col  font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>P</h3></div>
+          <div class="col font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>O</h3></div>
+          <div class="col  font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>Customer Req.</h3></div>
+          <div class="col font-weight-bold text-center themed-grid-col bg-white mr-2"><h3>C</h3></div>
+        </div>
+
+        <div class="row mb-5">
+          <tr>
+            <div class="col text-center mr-2 themed-grid-col bg-primary text-white"><img style="height:75px" style="width:75px" <%= image_tag "supplier.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-danger text-white"><img style="height:75px" style="width:75px" <%= image_tag "input.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-light text-white"><img style="height:75px" style="width:75px" <%= image_tag "pros_cust.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-secondary text-white"><img style="height:75px" style="width:75px" <%= image_tag "process.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-success text-white"><img style="height:75px" style="width:75px" <%= image_tag "output.png"%></div>
+            <div class="col text-center mr-2 themed-grid-col bg-light text-white"><img style="height:75px" style="width:75px" <%= image_tag "pros_cust.png"%></div>
+            <div class="col
+             text-center themed-grid-col bg-warning text-white"><center><img style="height:75px" style="width:75px" <%= image_tag "customer.png"%></center></div>
+          </tr>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :supplier1, :type=>"supplier", :class=>"form-control", :id=>"exampleSupplier1", :placeholder=>"Enter Supplier" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :input1, :type=>"input", :class=>"form-control", :id=>"exampleInput1", :placeholder=>"Enter Input" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :process_requirement1, :type=>"process_requirement1", :class=>"form-control", :id=>"exampleProcessRequirement1", :placeholder=>"Enter Requirement" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :process1, :type=>"process", :class=>"form-control", :id=>"exampleProcess1", :placeholder=>"Enter Process" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :output1, :type=>"output", :class=>"form-control", :id=>"exampleOutput1", :placeholder=>"Enter Output" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :customer_requirement1, :type=>"customer_requirement1", :class=>"form-control", :id=>"exampleCustomerRequirement1", :placeholder=>"Enter Requirement" %>
+            </div>
+            <div class="col themed-grid-col">
+              <%= f.text_field :customer1, :type=>"customer", :class=>"form-control", :id=>"exampleCustomer1", :placeholder=>"Enter Customer" %>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :supplier2, :type=>"supplier", :class=>"form-control", :id=>"exampleSupplier2", :placeholder=>"Enter Supplier" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :input2, :type=>"input", :class=>"form-control", :id=>"exampleInput2", :placeholder=>"Enter Input" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :process_requirement2, :type=>"process_requirement2", :class=>"form-control", :id=>"exampleProcessRequirement2", :placeholder=>"Enter Requirement" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :process2, :type=>"process", :class=>"form-control", :id=>"exampleProcess2", :placeholder=>"Enter Process" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :output2, :type=>"output", :class=>"form-control", :id=>"exampleOutput2", :placeholder=>"Enter Output" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :customer_requirement2, :type=>"customer_requirement2", :class=>"form-control", :id=>"exampleCustomerRequirement2", :placeholder=>"Enter Requirement" %>
+            </div>
+            <div class="col themed-grid-col">
+              <%= f.text_field :customer2, :type=>"customer", :class=>"form-control", :id=>"exampleCustomer2", :placeholder=>"Enter Customer" %>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :supplier3, :type=>"supplier", :class=>"form-control", :id=>"exampleSupplier3", :placeholder=>"Enter Supplier" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :input3, :type=>"input", :class=>"form-control", :id=>"exampleInput3", :placeholder=>"Enter Input" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :process_requirement3, :type=>"process_requirement3", :class=>"form-control", :id=>"exampleProcessRequirement3", :placeholder=>"Enter Requirement" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :process3, :type=>"process", :class=>"form-control", :id=>"exampleProcess3", :placeholder=>"Enter Process" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :output3, :type=>"output", :class=>"form-control", :id=>"exampleOutput3", :placeholder=>"Enter Output" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :customer_requirement3, :type=>"customer_requirement3", :class=>"form-control", :id=>"exampleCustomerRequirement3", :placeholder=>"Enter Requirement" %>
+            </div>
+            <div class="col themed-grid-col">
+              <%= f.text_field :customer3, :type=>"customer", :class=>"form-control", :id=>"exampleCustomer3", :placeholder=>"Enter Customer" %>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :supplier4, :type=>"supplier", :class=>"form-control", :id=>"exampleSupplier4", :placeholder=>"Enter Supplier" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :input4, :type=>"input", :class=>"form-control", :id=>"exampleInput4", :placeholder=>"Enter Input" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :process_requirement4, :type=>"process_requirement4", :class=>"form-control", :id=>"exampleProcessRequirement4", :placeholder=>"Enter Requirement" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :process4, :type=>"process", :class=>"form-control", :id=>"exampleProcess4", :placeholder=>"Enter Process" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :output4, :type=>"output", :class=>"form-control", :id=>"exampleOutput4", :placeholder=>"Enter Output" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :customer_requirement4, :type=>"customer_requirement4", :class=>"form-control", :id=>"exampleCustomerRequirement4", :placeholder=>"Enter Requirement" %>
+            </div>
+            <div class="col themed-grid-col">
+              <%= f.text_field :customer4, :type=>"customer", :class=>"form-control", :id=>"exampleCustomer4", :placeholder=>"Enter Customer" %>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :supplier5, :type=>"supplier", :class=>"form-control", :id=>"exampleSupplier5", :placeholder=>"Enter Supplier" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :input5, :type=>"input", :class=>"form-control", :id=>"exampleInput5", :placeholder=>"Enter Input" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :process_requirement5, :type=>"process_requirement5", :class=>"form-control", :id=>"exampleProcessRequirement5", :placeholder=>"Enter Requirement" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :process5, :type=>"process", :class=>"form-control", :id=>"exampleProcess5", :placeholder=>"Enter Process" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :output5, :type=>"output", :class=>"form-control", :id=>"exampleOutput5", :placeholder=>"Enter Output" %>
+            </div>
+            <div class="col mr-2 themed-grid-col">
+              <%= f.text_field :customer_requirement5, :type=>"customer_requirement5", :class=>"form-control", :id=>"exampleCustomerRequirement5", :placeholder=>"Enter Requirement" %>
+            </div>
+            <div class="col themed-grid-col">
+              <%= f.text_field :customer5, :type=>"customer", :class=>"form-control", :id=>"exampleCustomer5", :placeholder=>"Enter Customer" %>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <center>
+        <div class="col-2 text-center">
+          <%= f.text_field :file_name, :class=>"form-control",:placeholder=>"Enter Filename" %>
+        </div>
+    </center>
+    <br>
+    <center>
+      <%= f.submit 'Edit SIPOC', class: 'btn btn-primary'%>
+    </center>
+    
+<%end%>
+</div> <!-- /container -->
+</body>
+</html>

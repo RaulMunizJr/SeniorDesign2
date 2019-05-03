@@ -1,5 +1,4 @@
 class SipocsController < ApplicationController
-  before_action :set_sipoc, only: [:show, :edit, :update, :destroy]
 
   # GET /sipocs
   # GET /sipocs.json
@@ -41,8 +40,7 @@ class SipocsController < ApplicationController
   # PATCH/PUT /sipocs/1
   # PATCH/PUT /sipocs/1.json
   def update
-    @sipoc = sipoc.find(params[:id])
-
+    @sipoc = Sipoc.find(params[:id])
     if @sipoc.update(sipoc_params)
 			flash[:notice] = "Your SIPOC has been updated successfully!"
 			redirect_to profile_path(@sipoc)
@@ -54,18 +52,17 @@ class SipocsController < ApplicationController
   # DELETE /sipocs/1
   # DELETE /sipocs/1.json
   def destroy
-    @sipoc.destroy
-    respond_to do |format|
-      format.html { redirect_to sipocs_url, notice: 'Sipoc was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    @sipoc = Sipoc.find(params[:id])
+  		@sipoc.destroy
+  		flash[:alert] = "Your SIPOC has been deleted!"
+  		redirect_to profile_path
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_sipoc
-      @sipoc = Sipoc.find(params[:id])
-    end
+    #  def set_sipoc
+    #    @sipoc = Sipoc.find(params[:id])
+    #  end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sipoc_params

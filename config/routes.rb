@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get '/sipocs/new', to: 'sipocs#new'
   post '/sipocs', to: 'sipocs#create'
   get '/sipocs/:id/edit', to: 'sipocs#edit'
-  patch '/sipocs/:id', to: 'sipocs#update' #submission
+  patch '/sipocs/:id', to: 'sipocs#update', as: 'update_sipoc' #submission
   get'/sipocs/:id', to: 'sipocs#show', as: 'show_sipoc' #display
   delete '/sipocs/:id', to: 'sipocs#destroy'
 
