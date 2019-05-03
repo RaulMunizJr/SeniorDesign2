@@ -136,7 +136,16 @@
             <div class="col themed-grid-col font-weight-bold text-warning"><center><%=@sipoc.customer5%></center></div>
         </div>
       </div>
-    </div>    
+    </div>
+    <center>
+    <%= link_to 'New SIPOC', new_sipoc_path, class: "btn btn-primary" %>
+    <div class="divider"></div>
+    <%= link_to "Edit SIPOC", edit_sipoc_path(@sipoc), class: "btn btn-success" %>
+    <div class="divider"></div>
+    <%= link_to 'Delete', show_sipoc_path(@sipoc), 
+                                          method: :delete,
+                                          data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+    </center>    
 
 </div> <!-- /container -->
 </body>

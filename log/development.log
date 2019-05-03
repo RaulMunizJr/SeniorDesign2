@@ -43888,3 +43888,611 @@ Processing by DashboardController#index as HTML
 Completed 200 OK in 65ms (Views: 62.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/sipocs/2/edit" for 127.0.0.1 at 2019-05-03 01:06:09 -0500
+  
+PG::ConnectionBad (fe_sendauth: no password supplied
+):
+  
+pg-1.1.4-x86 (mingw32) lib/pg.rb:56:in `initialize'
+pg-1.1.4-x86 (mingw32) lib/pg.rb:56:in `new'
+pg-1.1.4-x86 (mingw32) lib/pg.rb:56:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-03 01:09:30 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-03 01:09:37 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 01:09:37 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (517.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (530.7ms)
+Completed 200 OK in 687ms (Views: 677.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-05-03 01:09:46 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 01:09:46 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (20.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 140ms (Views: 129.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-05-03 01:09:52 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 01:09:52 -0500
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (11.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 134ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool1" for 127.0.0.1 at 2019-05-03 01:09:54 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool1 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 01:09:54 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (7.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 140ms (Views: 130.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool2" for 127.0.0.1 at 2019-05-03 01:09:55 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool2 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 01:09:55 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (12.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 133ms (Views: 123.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2019-05-03 01:09:59 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (1.1ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (1.0ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (84.9ms)
+Completed 200 OK in 214ms (Views: 175.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-03 01:10:01 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 158ms (Views: 143.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-03 01:25:00 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 01:25:08 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (200.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (213.9ms)
+Completed 200 OK in 343ms (Views: 333.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2019-05-03 01:25:10 -0500
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (1.1ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (1.0ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (100.8ms)
+Completed 200 OK in 239ms (Views: 204.8ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/vsms/1" for 127.0.0.1 at 2019-05-03 01:25:12 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:8
+  Rendering vsms/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/vsms/show.html.erb:56
+  Rendered vsms/show.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 155ms (Views: 138.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/vsms/1/edit" for 127.0.0.1 at 2019-05-03 01:25:15 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:28
+  Rendering vsms/edit.html.erb within layouts/application
+  Rendered vsms/edit.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 154ms (Views: 133.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/vsms/1" for 127.0.0.1 at 2019-05-03 01:25:20 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by VsmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Eqj7XS971MSj+AojQnT2iqYwI7DjRICja94y0K9Tr1RxL3nylr3FgX9Dvcu7nzheqYe/swVmUnEpzohCvXFDhg==", "vsm"=>{"file_name"=>"vsm_juan_tryout", "inventory1"=>"1", "inventory2"=>"2", "inventory3"=>"3", "inventory4"=>"4", "processA"=>"try1", "resourceA"=>"completing form", "processB"=>"try2", "resourceB"=>"completing form", "processC"=>"try3", "resourceC"=>"completing form", "processD"=>"try 4", "resourceD"=>"completing form", "dataA1"=>"ab", "dataA2"=>"bc", "dataA3"=>"cd", "dataB1"=>"abb", "dataB2"=>"bcc", "dataB3"=>"cdd", "dataC1"=>"aab", "dataC2"=>"bbc", "dataC3"=>"ccd", "dataD1"=>"abc", "dataD2"=>"bcd", "dataD3"=>"cde", "PLT1"=>"1", "PLT2"=>"2", "PLT3"=>"3", "PLT4"=>"4", "PT1"=>"2", "PT2"=>"3", "PT3"=>"4"}, "commit"=>"Edit VSM", "id"=>"1"}
+  [1m[36mVsm Load (0.5ms)[0m  [1m[34mSELECT  "vsms".* FROM "vsms" WHERE "vsms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/vsms_controller.rb:33
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/vsms_controller.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/vsms_controller.rb:33
+Redirected to http://localhost:3000/profile.1
+Completed 302 Found in 17ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/profile.1" for 127.0.0.1 at 2019-05-03 01:25:20 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as 
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (0.5ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (0.4ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 385ms (Views: 240.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sipocs/2" for 127.0.0.1 at 2019-05-03 01:25:23 -0500
+Processing by SipocsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `set_sipoc' for #<SipocsController:0xb2fe3a8>):
+  
+activesupport (5.2.2) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.2) lib/active_support/callbacks.rb:179:in `call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:34:in `call'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.2) lib/active_support/callbacks.rb:180:in `call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.2) lib/active_support/callbacks.rb:513:in `call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.2) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.2) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `call'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/sipocs/2" for 127.0.0.1 at 2019-05-03 01:26:21 -0500
+Processing by SipocsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSipoc Load (0.4ms)[0m  [1m[34mSELECT  "sipocs".* FROM "sipocs" WHERE "sipocs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:13
+  Rendering sipocs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sipocs/show.html.erb:59
+  Rendered sipocs/show.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 182ms (Views: 127.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/sipocs/new" for 127.0.0.1 at 2019-05-03 01:26:24 -0500
+Processing by SipocsController#new as HTML
+  Rendering sipocs/new.html.erb within layouts/application
+  Rendered sipocs/_form.html.erb (1.7ms)
+  Rendered sipocs/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 139ms (Views: 128.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sipocs" for 127.0.0.1 at 2019-05-03 01:26:40 -0500
+Processing by SipocsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"whtlhYpam1eeAKMt+uxuzLS/INf/Nv8PZA2VHlQ6mO2hnOcqM5yKEkK7FMUDB6AYuwi81BkULd0mHS+MRhh0Pw==", "sipoc"=>{"supplier1"=>"supl1", "input1"=>"inputt1", "process_requirement1"=>"req1", "process1"=>"processt1", "output1"=>"outputt1", "customer_requirement1"=>"req11", "customer1"=>"cust1", "supplier2"=>"", "input2"=>"", "process_requirement2"=>"", "process2"=>"", "output2"=>"", "customer_requirement2"=>"", "customer2"=>"", "supplier3"=>"", "input3"=>"", "process_requirement3"=>"", "process3"=>"", "output3"=>"", "customer_requirement3"=>"", "customer3"=>"", "supplier4"=>"", "input4"=>"", "process_requirement4"=>"", "process4"=>"", "output4"=>"", "customer_requirement4"=>"", "customer4"=>"", "supplier5"=>"", "input5"=>"", "process_requirement5"=>"", "process5"=>"", "output5"=>"", "customer_requirement5"=>"", "customer5"=>"", "file_name"=>"test_sipoc_juan_2"}, "commit"=>"Save File"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sipocs_controller.rb:32
+  [1m[36mSipoc Create (0.9ms)[0m  [1m[32mINSERT INTO "sipocs" ("file_name", "supplier1", "input1", "process_requirement1", "process1", "output1", "customer_requirement1", "customer1", "supplier2", "input2", "process_requirement2", "process2", "output2", "customer_requirement2", "customer2", "supplier3", "input3", "process_requirement3", "process3", "output3", "customer_requirement3", "customer3", "supplier4", "input4", "process_requirement4", "process4", "output4", "customer_requirement4", "customer4", "supplier5", "input5", "process_requirement5", "process5", "output5", "customer_requirement5", "customer5", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39) RETURNING "id"[0m  [["file_name", "test_sipoc_juan_2"], ["supplier1", "supl1"], ["input1", "inputt1"], ["process_requirement1", "req1"], ["process1", "processt1"], ["output1", "outputt1"], ["customer_requirement1", "req11"], ["customer1", "cust1"], ["supplier2", ""], ["input2", ""], ["process_requirement2", ""], ["process2", ""], ["output2", ""], ["customer_requirement2", ""], ["customer2", ""], ["supplier3", ""], ["input3", ""], ["process_requirement3", ""], ["process3", ""], ["output3", ""], ["customer_requirement3", ""], ["customer3", ""], ["supplier4", ""], ["input4", ""], ["process_requirement4", ""], ["process4", ""], ["output4", ""], ["customer_requirement4", ""], ["customer4", ""], ["supplier5", ""], ["input5", ""], ["process_requirement5", ""], ["process5", ""], ["output5", ""], ["customer_requirement5", ""], ["customer5", ""], ["created_at", "2019-05-03 06:26:40.450901"], ["updated_at", "2019-05-03 06:26:40.450901"], ["user_id", 1]]
+  ↳ app/controllers/sipocs_controller.rb:32
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sipocs_controller.rb:32
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 25ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 01:26:40 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (12.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 141ms (Views: 131.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2019-05-03 01:26:42 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (0.5ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (0.7ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 159ms (Views: 140.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/sipocs/3" for 127.0.0.1 at 2019-05-03 01:26:44 -0500
+Processing by SipocsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSipoc Load (1.3ms)[0m  [1m[34mSELECT  "sipocs".* FROM "sipocs" WHERE "sipocs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:13
+  Rendering sipocs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sipocs/show.html.erb:59
+  Rendered sipocs/show.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 130ms (Views: 114.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sipocs/3/edit" for 127.0.0.1 at 2019-05-03 01:26:46 -0500
+Processing by SipocsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSipoc Load (0.5ms)[0m  [1m[34mSELECT  "sipocs".* FROM "sipocs" WHERE "sipocs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:23
+  Rendering sipocs/edit.html.erb within layouts/application
+  Rendered sipocs/edit.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (D:/GitHub/SeniorDesign2/app/views/sipocs/edit.html.erb:46: syntax error, unexpected =>
+...pend=  form_for @sipoc, url: => update_sipoc_path do |f| @ou...
+...                               ^
+D:/GitHub/SeniorDesign2/app/views/sipocs/edit.html.erb:218: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/sipocs/edit.html.erb:46: syntax error, unexpected =>
+app/views/sipocs/edit.html.erb:218: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/sipocs/3/edit" for 127.0.0.1 at 2019-05-03 01:27:54 -0500
+Processing by SipocsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSipoc Load (0.5ms)[0m  [1m[34mSELECT  "sipocs".* FROM "sipocs" WHERE "sipocs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:23
+  Rendering sipocs/edit.html.erb within layouts/application
+  Rendered sipocs/edit.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 4.2ms)
+
+
+  
+SyntaxError (D:/GitHub/SeniorDesign2/app/views/sipocs/edit.html.erb:46: syntax error, unexpected =>
+...pend=  form_for @sipoc, url: => update_sipoc_path do |f| @ou...
+...                               ^
+D:/GitHub/SeniorDesign2/app/views/sipocs/edit.html.erb:218: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/sipocs/edit.html.erb:46: syntax error, unexpected =>
+app/views/sipocs/edit.html.erb:218: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/sipocs/3/edit" for 127.0.0.1 at 2019-05-03 01:28:02 -0500
+Processing by SipocsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSipoc Load (0.5ms)[0m  [1m[34mSELECT  "sipocs".* FROM "sipocs" WHERE "sipocs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:23
+  Rendering sipocs/edit.html.erb within layouts/application
+  Rendered sipocs/edit.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (D:/GitHub/SeniorDesign2/app/views/sipocs/edit.html.erb:46: syntax error, unexpected =>
+...pend=  form_for @sipoc, url: => update_sipoc_path do |f| @ou...
+...                               ^
+D:/GitHub/SeniorDesign2/app/views/sipocs/edit.html.erb:218: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/sipocs/edit.html.erb:46: syntax error, unexpected =>
+app/views/sipocs/edit.html.erb:218: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/sipocs/3/edit" for 127.0.0.1 at 2019-05-03 01:29:05 -0500
+Processing by SipocsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSipoc Load (0.5ms)[0m  [1m[34mSELECT  "sipocs".* FROM "sipocs" WHERE "sipocs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:23
+  Rendering sipocs/edit.html.erb within layouts/application
+  Rendered sipocs/edit.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 126ms (Views: 111.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/sipocs/3" for 127.0.0.1 at 2019-05-03 01:29:12 -0500
+Processing by SipocsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z1qk+3boHl3G7SE2Lo9ns/6cMXdm4v0TBPTKN4q9r4IE3SZUzy4PGBpWlt7XZKln8SutdIDAL8FG5HClmJ9DUA==", "sipoc"=>{"supplier1"=>"supl1", "input1"=>"inputt1", "process_requirement1"=>"req1", "process1"=>"processt1", "output1"=>"outputt1", "customer_requirement1"=>"req11", "customer1"=>"cust1", "supplier2"=>"", "input2"=>"", "process_requirement2"=>"", "process2"=>"", "output2"=>"", "customer_requirement2"=>"", "customer2"=>"", "supplier3"=>"", "input3"=>"", "process_requirement3"=>"", "process3"=>"", "output3"=>"", "customer_requirement3"=>"", "customer3"=>"", "supplier4"=>"", "input4"=>"", "process_requirement4"=>"", "process4"=>"", "output4"=>"", "customer_requirement4"=>"", "customer4"=>"", "supplier5"=>"", "input5"=>"", "process_requirement5"=>"", "process5"=>"", "output5"=>"", "customer_requirement5"=>"", "customer5"=>"", "file_name"=>"test_sipoc_juan_2"}, "commit"=>"Edit SIPOC", "id"=>"3"}
+  [1m[36mSipoc Load (0.4ms)[0m  [1m[34mSELECT  "sipocs".* FROM "sipocs" WHERE "sipocs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:43
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sipocs_controller.rb:44
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sipocs_controller.rb:44
+Redirected to http://localhost:3000/profile.3
+Completed 302 Found in 28ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/profile.3" for 127.0.0.1 at 2019-05-03 01:29:12 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as 
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (0.5ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 417ms (Views: 264.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/sipocs/3" for 127.0.0.1 at 2019-05-03 01:29:17 -0500
+Processing by SipocsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSipoc Load (0.3ms)[0m  [1m[34mSELECT  "sipocs".* FROM "sipocs" WHERE "sipocs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:13
+  Rendering sipocs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sipocs/show.html.erb:59
+  Rendered sipocs/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 128ms (Views: 113.9ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/sipocs/3" for 127.0.0.1 at 2019-05-03 01:29:21 -0500
+Processing by SipocsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GA07yX2gnenqKI4YinOdCSXJzmrQLlAipxaFT9i9m/57irlmxGaMrDaTOfBzmFPdKn5SaTYMgvDlBj/dyp93LA==", "id"=>"3"}
+  [1m[36mSipoc Load (0.4ms)[0m  [1m[34mSELECT  "sipocs".* FROM "sipocs" WHERE "sipocs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:55
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/sipocs_controller.rb:56:in `destroy'
+Started DELETE "/sipocs/3" for 127.0.0.1 at 2019-05-03 01:29:50 -0500
+Processing by SipocsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GA07yX2gnenqKI4YinOdCSXJzmrQLlAipxaFT9i9m/57irlmxGaMrDaTOfBzmFPdKn5SaTYMgvDlBj/dyp93LA==", "id"=>"3"}
+  [1m[36mSipoc Load (0.3ms)[0m  [1m[34mSELECT  "sipocs".* FROM "sipocs" WHERE "sipocs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sipocs_controller.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sipocs_controller.rb:56
+  [1m[36mSipoc Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sipocs" WHERE "sipocs"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/sipocs_controller.rb:56
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sipocs_controller.rb:56
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 46ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2019-05-03 01:29:50 -0500
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mVsm Load (0.4ms)[0m  [1m[34mSELECT "vsms".* FROM "vsms"[0m
+  ↳ app/views/profile/index.html.erb:61
+  [1m[36mSipoc Load (0.4ms)[0m  [1m[34mSELECT "sipocs".* FROM "sipocs"[0m
+  ↳ app/views/profile/index.html.erb:82
+  Rendered profile/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 201ms (Views: 173.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 01:29:53 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load2.html.erb (11.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 137ms (Views: 127.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tool1" for 127.0.0.1 at 2019-05-03 01:29:56 -0500
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#tool1 as HTML
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-05-03 01:29:56 -0500
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/_load1.html.erb (6.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 125ms (Views: 115.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-05-03 01:30:07 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZtB7phQ3wbjMHbzA8X/tKRTai6h3tLWRbiR3XV7znrAFV/kJrfHQ/RCmCygIlCP9G20Xq5GWZ0MsNM3PTNFyYg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-03 01:30:07 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 115ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
