@@ -207,8 +207,8 @@
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="/dashboard">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
+                  <i class="fas fa-fw fa-table fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Dashboard
                 </a>
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -235,7 +235,7 @@
 
 <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-4 col-xl-3">
+                    <div class="col-lg-5 col-xl-4">
                         <div class="card">
                             <div class="card-body text-center">
                                 <div class="media align-items-center mb-4">
@@ -243,14 +243,14 @@
                                     <div class="media-body">
                                     </div>
                                 </div>
-                                <%= current_user.email =%>
+                                <div><%= current_user.email =%></div>
                                 <img class="mr-3 text-center" style="height:80px" style="width:80px" <%= image_tag "pug.png"%>
-
+<br><br><br>
                                 <h2>My Files</h2>
                                 <hr/>
           <!--------------------------------------------------->
+          <h3>SIPOC:</h3>
           <% @sipoc.each do |sipoc| %>
-      <h3>SIPOC:</h3>
       <div class="row">
         <div class="col">
           <section>
@@ -274,9 +274,8 @@
 <!---------------------><br>
 
 
-
+<h3>VSM:</h3>
           <% @vsm.each do |vsm| %>
-          <h3>VSM:</h3>
       <div class="row">
         <div class="col">
           <section>
@@ -302,12 +301,12 @@
                         </div>  
                     </div>
                     <!---------->
-                    <div class="col-lg-8 col-xl-9">
+                    <div class="col-lg-7 col-xl-8">
                         <div class="card">
                             <div class="card-body">
                                 <form action="#" class="form-profile">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="textarea" id="textarea" cols="30" rows="2" placeholder="Post a new message"></textarea>
+                                        <textarea class="form-control" name="textarea" id="textarea" cols="30" rows="2" placeholder="Post a new note"></textarea>
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <ul class="mb-0 form-profile__icons">
@@ -324,7 +323,7 @@
                                                 <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-smile"></i></button>
                                             </li>
                                         </ul>
-                                        <button class="btn btn-primary px-3 ml-4">Send</button>
+                                        <button class="btn btn-primary px-3 ml-4">Post</button>
                                     </div>
                                 </form>
                             </div>
@@ -336,12 +335,8 @@
                                 
                                 <div class="media-body">
                                     <div class="d-sm-flex justify-content-between mb-2">
-                                        <h5 class="mb-sm-0"><%= current_user.email =%> <small class="text-muted ml-3">about 3 days ago</small></h5>
-                                        <div class="media-reply__link">
-                                            <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-up"></i></button>
-                                            <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-down"></i></button>
-                                            <button class="btn btn-transparent p-0 ml-3 font-weight-bold">Reply</button>
-                                        </div>
+                                        <h5 class="mb-sm-0"><small class="text-muted ml-3">about 3 days ago</small></h5>
+                                        
                                     </div>
                                     
                                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
@@ -352,12 +347,8 @@
                                
                                 <div class="media-body">
                                     <div class="d-sm-flex justify-content-between mb-2">
-                                        <h5 class="mb-sm-0"><%= current_user.email =%><small class="text-muted ml-3">about 3 days ago</small></h5>
-                                        <div class="media-reply__link">
-                                            <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-up"></i></button>
-                                            <button class="btn btn-transparent p-0 mr-3"><i class="fa fa-thumbs-down"></i></button>
-                                            <button class="btn btn-transparent p-0 ml-3 font-weight-bold">Reply</button>
-                                        </div>
+                                        <h5 class="mb-sm-0"><small class="text-muted ml-3">about 3 days ago</small></h5>
+                                        
                                     </div>
                                     
                                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
@@ -371,36 +362,9 @@
 
 
 
-
-
-
-
-
-
 <!--------------------------------------------------------------------------------------------->
 
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br><br><br>
 
 <!------------------------------------->
 <script src="http://demo.themefisher.com/quixlab/plugins/common/common.min.js"></script>
