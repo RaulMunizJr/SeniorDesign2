@@ -1,9 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hi! This is the repository for the lean manufacturing project started by Raul Muniz and Juan Guerrero in an effort to provide an alternative to all of those existing solutions that help in the implementation of any lean tool that helps improve processes and reduce costs.
 
-Things you may want to cover:
+Additional information will be posted as project keeps evolving and as new tools become avaiable. A list of those currently avaiable and the ones we will continue to work on should be down here.
+
+Instructions as to how to run and install the application is to be added in a form of a manual.
+
+Things you may need to consider in advance:
 
 * Ruby version
 
@@ -15,10 +18,7 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
-
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
-* ...
