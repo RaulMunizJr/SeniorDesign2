@@ -52,7 +52,7 @@
       <div class="row">
         <div class="col-2 text-center">          
 <%= form_for @vsm, :url => update_vsm_path do |f| %>
-            <%= f.text_field :file_name, :class=>"form-control",:placeholder=>"Enter Filename" %>
+            <%= f.text_field :file_name, :class=>"form-control"%>
           </div>
         </div>
         
@@ -99,12 +99,15 @@
 <img style="height:50px" style="width:50px" <%= image_tag "ArrowRight.png"%>
 <div class="form-inline">
   <div class="form-group">
+    <div class="divider5"></div>
   <%= f.number_field :inventory2, :class=>"form-control col-6 ml-1" %>
 </div>
 <div class="form-group">
+  <div class="divider3"></div>
   <%= f.number_field :inventory3, :class=>"form-control col-6 ml-1" %>
 </div>
 <div class="form-group">
+  <div class="divider3"></div>
   <%= f.number_field :inventory4, :class=>"form-control col-6 ml-1" %>
 </div>
 </div>
@@ -243,76 +246,42 @@
 <!---------------------- Lead Time Ladder ----------------->
 
 
-<div class="NhorizontalLine"></div>
+<div class="NhorizontalLine"><%= f.number_field :PLT1, :class=>"form-control col-12 ml-1 " %></div>
 <div id="NverticalLine"></div>
-<div id="NverticalLine" style="left: 213px"></div>
-<div class="NhorizontalLine" style="left: 362px"></div>
-<div id="NverticalLine" style="left: 362px"></div>
-<div id="NverticalLine" style="left: 511px"></div>
-<div id="NverticalLine" style="left: 660px"></div>
-<div class="NhorizontalLine" style="left: 660px"></div>
-<div id="NverticalLine" style="left: 809px"></div>
-<div id="NverticalLine" style="left: 958px"></div>
-
-
-<div class="form-inline">
-  <div class="form-group">
-    <div class="divider1"></div>
-    <%= f.number_field :PLT1, :class=>"form-control form-control-sm col-6 ml-1 " %>
-  </div>
-  <div class="form-group">
-    <div class="divider2"></div>
-    <%= f.number_field :PLT2, :class=>"form-control form-control-sm col-6 ml-1 " %>
-  </div>
-  <div class="form-group">
-    <div class="divider3"></div>
-    <%= f.number_field :PLT3, :class=>"form-control form-control-sm col-6 ml-1 " %>
-  </div>
-  <div class="form-group">
-    <div class="divider1"></div><div class="divider1"></div><div class="divider1"></div><div class="divider1"></div><div class="divider1"></div><div class="divider1"></div>
-    <%= f.number_field :PLT4, :class=>"form-control form-control-sm col-6 ml-1 " %>
-  </div>
-</div>
+<div id="NverticalLine" style="left: 262px"></div>
+<div class="NhorizontalLine" style="left: 334px"><%= f.number_field :PLT2, :class=>"form-control col-12 ml-1 " %></div>
+<div id="NverticalLine" style="left: 334px"></div>
+<div id="NverticalLine" style="left: 406px"></div>
+<div id="NverticalLine" style="left: 478px"></div>
+<div class="NhorizontalLine" style="left: 478px"><%= f.number_field :PLT3, :class=>"form-control col-12 ml-1 " %></div>
+<div id="NverticalLine" style="left: 550px"></div>
+<div id="NverticalLine" style="left: 622px"></div>
 
 
 <span style="top: 1513px">
-<div class="col-2 themed-grid-col text-center" style="left:940px">
+<div class="col-3 themed-grid-col text-center" style="left:600px">
       <h5 class="text-center">Lead Time Ladder</h5>
       
-      <div class="col-12  themed-grid-col" style="height:67px">Production Lead Time = </div>
+      <div class="col-12  themed-grid-col" style="height:67px">Production Lead Time = # Days</div>
       <div class="col"></div>
-      <div class="col-12 themed-grid-col" style="height:67px">Processing Time = </div>
+      <div class="col-12 themed-grid-col" style="height:67px">Processing Time = # Hours</div>
     
 </div>
 </span>
 
-<div class="form-inline">
-  <div class="form-group">
-    <div class="divider3"></div>
-    <%= f.number_field :PT1, :class=>"form-control form-control-sm col-6 ml-1 " %>
-  </div>
-  <div class="form-group">
-    <div class="divider4"></div>
-    <%= f.number_field :PT2, :class=>"form-control form-control-sm col-6 ml-1 " %>
-  </div>
-  <div class="form-group">
-    <div class="divider3"></div>
-    <%= f.number_field :PT3, :class=>"form-control form-control-sm col-6 ml-1 " %>
-  </div>
-</div>
 
-<div class="NBhorizontalLine" style="left: 213px"></div>
-<div class="NBhorizontalLine" style="left: 512px"></div>
-<div class="NBhorizontalLine" style="left: 809px"></div>
+<div class="NBhorizontalLine" style="left: 262px"><%= f.number_field :PT1, :class=>"form-control col-11 ml-1 " %></div>
+<div class="NBhorizontalLine" style="left: 406px"><%= f.number_field :PT2, :class=>"form-control col-11 ml-1 " %></div>
+<div class="NBhorizontalLine" style="left: 550px"><%= f.number_field :PT3, :class=>"form-control col-11 ml-1 " %></div>
 
 
-<div class="NSShorizontalLine" style="left: 958px"></div>
+<div class="NhorizontalLine" style="left: 622px"><%= f.number_field :PLT4, :class=>"form-control col-12 ml-1 " %></div>
 <br><br>
 <center>
 <%= f.submit 'Edit VSM', class: "btn btn-success"%>
 </center>
 
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 <!---------------------------------------------------------->
 
